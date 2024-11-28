@@ -1,0 +1,21 @@
+# This yml file is different
+# It is the global configuration file, which is used to store the configuration for the entire website.
+
+# All of the values here can also be accessed in other configuration files by using the %variable_name% placeholder.
+#   For example, the value of the "donation_link" field can be accessed in sponsors.yml config by using %donation_link%
+
+# The title of the website, shown in the browser tab.
+website_title: "RoboRaiders 3681"
+
+# The description of the website, shown in search engine results.
+website_description: >
+  hi
+
+# The icon of the website, shown in the browser tab.
+website_icon: "/imgs/nav_logo.png"
+
+# The root URL of the image hosting service, used to store images for the website.
+# image_host: ""
+
+# The donation link shown in the footer and the donate button, you can use the %donation_link% placeholder in markdown files to insert this value.
+donation_link: ""

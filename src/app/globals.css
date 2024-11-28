@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-padding-top: 100px;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(0 0 0 / 20%);
+  border-radius: 9999px;
+
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); */
+}
+
+.dark .scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.markdown p {
+  @apply mb-6;
+
+  text-indent: 2em;
+}
+
+.markdown .text-center p {
+  text-indent: 0;
+}
+
+.markdown h1 {
+  @apply text-3xl mb-5;
+}
+
+.markdown h2 {
+  @apply text-2xl mb-4;
+}
+
+.markdown h3 {
+  @apply text-xl mb-3;
+}
+
+.markdown h4 {
+  @apply text-lg mb-2;
+}
+
+.markdown h5 {
+  @apply text-base mb-1;
+}
+
+.markdown h6 {
+  @apply text-sm mb-1;
+}
+
+.markdown a {
+  @apply text-blue-500 underline;
+}
+
+.markdown a:hover {
+  @apply text-blue-600;
+}
+
+.markdown ul {
+  @apply list-disc list-inside mb-6;
+}
+
+.markdown ol {
+  @apply list-decimal list-inside mb-6;
+}
+
+.markdown li {
+  @apply mb-1;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-gray-300 pl-4 mb-6;
+}
+
+.markdown blockquote p {
+  @apply mb-0;
+}
+
+.markdown pre {
+  @apply bg-gray-100 dark:bg-gray-800 rounded-md p-4 mb-6;
+}
+
+.markdown code {
+  @apply bg-gray-100 dark:bg-gray-800 rounded-md p-1;
+}

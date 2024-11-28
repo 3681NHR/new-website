@@ -1,0 +1,21 @@
+version: "0.2"
+ignorePaths:
+  - pnpm-lock.yaml
+  - node_modules
+  - dist
+  - build
+  - coverage
+  - out
+  - temp
+  - tmp
+  - lib
+  - dll
+  - bin
+  - obj
+dictionaryDefinitions: []
+dictionaries: []
+ignoreWords: []
+import: []
+words:
+  - linkify
+  - ospi

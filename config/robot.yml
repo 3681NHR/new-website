@@ -1,0 +1,18 @@
+# This file contains the configuration for the home (default path) page.
+
+# Everything in this file is listen in chronological order to how they appear on the page.
+# Both HTML and Markdown are supported in most values.
+
+
+# The large text at the top of the page.
+title: "Our Robot"
+# The smaller text below the title.
+subtitle: "Our robot is designed and built by our students, with the help of our mentors."
+
+# Sections of the page, each one gets a title and an image gallery.
+sections:
+  - id: "2023-2024" # This id is used for the table of contents, and for linking to the section. For example, this would be /robot#2022-2023 (NOTE: This value must be unique and cannot contain spaces)
+    title: "2023 - 2024 Design" # The title of the section, displayed above the photos
+    pictures: # Image to show, this follows the same rules as the pictures section in config/index.yml
+      - desc: "Our robot"
+        url: "/imgs/robot/robot2023.jpg"

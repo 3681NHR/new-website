@@ -1,0 +1,23 @@
+# This file contains the configuration for the home (default path) page.
+
+# Everything in this file is listen in chronological order to how they appear on the page.
+# Both HTML and Markdown are supported in most values.
+
+
+# The large text at the top of the page.
+title: "Who are the RoboRaiders?"
+
+# The text below the title.
+about: >
+  
+
+# The pictures in the image carousel.
+#  The description is shown when the user hovers over the image.
+#  The url is the file path relative to the 'public' folder.
+pictures:
+  - desc: "Picture description"
+    url: "/imgs/picture.png"
+  
+
+plz_donate: >
+  As a student-run team, we rely on donations and sponsors to run. If you would like to donate, please click [here](%donation_link%).

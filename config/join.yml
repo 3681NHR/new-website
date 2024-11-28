@@ -1,0 +1,11 @@
+# This file contains the configuration for the home (default path) page.
+
+# Everything in this file is listen in chronological order to how they appear on the page.
+# Both HTML and Markdown are supported in most values.
+
+
+# The large text at the top of the page.
+title: "Join Us!"
+# The smaller text below the title.
+subtitle: |
+  We meet in the Benson forum, typically on Mondays and Wednesdays from whenever school ends to to ~6pm.
