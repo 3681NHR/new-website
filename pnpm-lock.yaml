@@ -10,7 +10,7 @@ importers:
     dependencies:
       chainlynx-website:
         specifier: 'file:'
-        version: 'file:'
+        version: 'roboraiders-website@file:'
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -764,9 +764,6 @@ packages:
 
   caniuse-lite@1.0.30001684:
     resolution: {integrity: sha512-G1LRwLIQjBQoyq0ZJGqGIJUXzJ8irpbjHLpVRXDvBEScFJ9b17sgK6vlx0GAJFE21okD7zXl08rRRUfq6HdoEQ==}
-
-  'chainlynx-website@file:':
-    resolution: {directory: '', type: directory}
 
   chalk@1.1.3:
     resolution: {integrity: sha512-U3lRVLMSlsCfjqYPbLyVv11M9CPW4I728d6TCKMAOJueEeB9/8o+eSsMnxPJD+Q+K909sdESg7C+tIkoH6on1A==}
@@ -2092,6 +2089,9 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
+  'roboraiders-website@file:':
+    resolution: {directory: '', type: directory}
+
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
@@ -3137,22 +3137,6 @@ snapshots:
   camelcase-css@2.0.1: {}
 
   caniuse-lite@1.0.30001684: {}
-
-  'chainlynx-website@file:':
-    dependencies:
-      markdown-it: 14.1.0
-      next: 15.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-      react-confetti: 6.1.0(react@18.3.1)
-      react-dom: 18.3.1(react@18.3.1)
-      yaml: 2.6.1
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@opentelemetry/api'
-      - '@playwright/test'
-      - babel-plugin-macros
-      - babel-plugin-react-compiler
-      - sass
 
   chalk@1.1.3:
     dependencies:
@@ -4620,6 +4604,26 @@ snapshots:
   rimraf@3.0.2:
     dependencies:
       glob: 7.2.3
+
+  'roboraiders-website@file:':
+    dependencies:
+      markdown-it: 14.1.0
+      next: 15.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      prettier-eslint: 16.3.0
+      react: 18.3.1
+      react-confetti: 6.1.0(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
+      yaml: 2.6.1
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@opentelemetry/api'
+      - '@playwright/test'
+      - babel-plugin-macros
+      - babel-plugin-react-compiler
+      - prettier-plugin-svelte
+      - sass
+      - supports-color
+      - svelte-eslint-parser
 
   run-parallel@1.2.0:
     dependencies:
