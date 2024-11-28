@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "chainlynx-website": "file:",
+    "lucide-react": "^0.462.0",
     "markdown-it": "^14.1.0",
     "next": "^15",
     "prettier-eslint": "^16.3.0",
