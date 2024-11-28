@@ -12,7 +12,7 @@ export default function About() {
         <div className="lg:mt-10">
           <h2 className="text-2xl mb-2">Jump To:</h2>
           <ul className="markdown list-disc ml-4">
-            {config.sections.map((section: any) => (
+            {config.sections.map(section => (
               <li key={section.id}>
                 <Link
                   href={`/about#` + section.id}
@@ -23,7 +23,7 @@ export default function About() {
           </ul>
         </div>
         <div className="flex flex-col items-center gap-12">
-          {config.sections.map((section: any) => (
+          {config.sections.map(section => (
             <div
               id={section.id}
               className="max-w-5xl flex flex-col items-center"
