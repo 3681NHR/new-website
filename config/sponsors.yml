@@ -31,10 +31,6 @@ sponsors:
     logo: "/imgs/sponsors/ospi.png"
     invert_dark: true
 
-  - name: "Boeing"
-    tier: "1"
-    url: "https://www.boeing.com/"
-
 # The tiers of sponsors mapped to the size of the logo, in a percentage of the typical size (320px in desktop, 256px in mobile)
 # The key is the tier, and the value is the size percentage.
 # The tiers are displayed in order from highest to lowest, with each tier on its own row.
