@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-import plugin from 'tailwindcss';
 
 const config: Config = {
   darkMode: 'class',
@@ -21,7 +20,7 @@ const config: Config = {
         light: {
           text: '#130405',
           background: '#fbf4f4',
-          primary: '#aa0000',
+          primary: '#cc0000',
           secondary: '#4444b5',
           accent: '#bfc17b',
         },

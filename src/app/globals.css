@@ -108,6 +108,19 @@ html {
 
 .dark .donate {
   box-shadow:
-    28px 28px 50px 0 #0d275020,
-    -23px -23px 45px 0 #ffff;
+    28px 28px 50px 0 #030109ff,
+    -23px -23px 45px 0 #160844ff;
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.embla--container {
+  display: flex;
+}
+
+.embla--slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
