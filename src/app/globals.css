@@ -129,13 +129,20 @@ html {
   transform: translate3d(0, 0, 0);
   flex: 0 0 100%;
   min-width: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .embla-controls {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0.6rem;
   margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.embla-control-button {
+  cursor: pointer;
 }
 
 .embla-image {

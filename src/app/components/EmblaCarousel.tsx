@@ -6,7 +6,7 @@ import Autoplay from 'embla-carousel-autoplay';
 
 export function EmblaCarousel() {
   const [emblaRef, emblaAPI] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ playOnInit: true, delay: 3000 }),
+    Autoplay({ playOnInit: true, delay: 3000, stopOnMouseEnter: true }),
   ]);
 
   const onPrevButtonClick = React.useCallback(() => {
@@ -38,7 +38,6 @@ export function EmblaCarousel() {
         <button className="embla-control-button" onClick={onPrevButtonClick}>
           Prev
         </button>
-        <p>autoplay bar will go here</p>
         <button className="embla-control-button" onClick={onNextButtonClick}>
           Next
         </button>
