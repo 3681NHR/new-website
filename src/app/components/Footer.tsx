@@ -66,6 +66,8 @@ const Footer = () => {
         </a>
       </div>
       <span>RoboRaiders, FRC Team 3681, a FIRST® WA Team</span>
+      <br></br>
+      <span>Logo courtesy of Sebastian Mulligan</span>
     </div>
   );
 };

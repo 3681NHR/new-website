@@ -5,15 +5,44 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 export function EmblaCarousel() {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+  const [emblaRef, emblaAPI] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ playOnInit: true, delay: 3000 }),
+  ]);
+
+  const onPrevButtonClick = React.useCallback(() => {
+    if (!emblaAPI) return;
+    emblaAPI.scrollPrev();
+  }, [emblaAPI]);
+
+  const onNextButtonClick = React.useCallback(() => {
+    if (!emblaAPI) return;
+    emblaAPI.scrollNext();
+  }, [emblaAPI]);
 
   return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
-        <div className="embla__slide">Slide 1</div>
-        <div className="embla__slide">Slide 2</div>
-        <div className="embla__slide">Slide 3</div>
+    <section className="embla">
+      <div className="embla-viewport" ref={emblaRef}>
+        <div className="embla-container">
+          <div className="embla-slide">
+            <img src="/placeholder.png" className="embla-image"></img>
+          </div>
+          <div className="embla-slide">
+            <img src="/placeholder.png" className="embla-image"></img>
+          </div>
+          <div className="embla-slide">
+            <img src="/placeholder.png" className="embla-image"></img>
+          </div>
+        </div>
       </div>
-    </div>
+      <div className="embla-controls">
+        <button className="embla-control-button" onClick={onPrevButtonClick}>
+          Prev
+        </button>
+        <p>autoplay bar will go here</p>
+        <button className="embla-control-button" onClick={onNextButtonClick}>
+          Next
+        </button>
+      </div>
+    </section>
   );
 }

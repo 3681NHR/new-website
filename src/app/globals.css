@@ -113,14 +113,35 @@ html {
 }
 
 .embla {
+  max-width: 48rem;
+  margin: auto;
+}
+
+.embla-viewport {
   overflow: hidden;
 }
 
-.embla--container {
+.embla-container {
   display: flex;
 }
 
-.embla--slide {
+.embla-slide {
+  transform: translate3d(0, 0, 0);
   flex: 0 0 100%;
   min-width: 0;
+}
+
+.embla-controls {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.embla-image {
+  width: auto;
+  height: 20rem;
+  object-fit: cover;
+  justify-self: center;
+  border-radius: 1rem;
 }
