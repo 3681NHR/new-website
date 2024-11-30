@@ -3,6 +3,7 @@
 import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import { ChevronLeft } from 'lucide-react';
 
 export function EmblaCarousel() {
   const [emblaRef, emblaAPI] = useEmblaCarousel({ loop: true }, [
@@ -35,10 +36,16 @@ export function EmblaCarousel() {
         </div>
       </div>
       <div className="embla-controls">
-        <button className="embla-control-button" onClick={onPrevButtonClick}>
-          Prev
+        <button
+          className="rounded-full w-12 h-12 md:w-10 md:h-10 flex items-center justify-center"
+          onClick={onPrevButtonClick}
+        >
+          <ChevronLeft
+            className="w-8 h-8 stroke-light-text dark:stroke-dark-text"
+            strokeWidth={3}
+          ></ChevronLeft>
         </button>
-        <button className="embla-control-button" onClick={onNextButtonClick}>
+        <button className="" onClick={onNextButtonClick}>
           Next
         </button>
       </div>

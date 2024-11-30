@@ -134,15 +134,10 @@ html {
 }
 
 .embla-controls {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 0.6rem;
   margin-top: 1rem;
-  justify-content: space-between;
-}
-
-.embla-control-button {
-  cursor: pointer;
+  justify-content: center;
 }
 
 .embla-image {
