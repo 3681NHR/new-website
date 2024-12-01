@@ -30,7 +30,7 @@ export default function Home() {
       {/*<ImageCarousel pictures={config.pictures} autoScroll></ImageCarousel>*/}
       <EmblaCarousel></EmblaCarousel>
 
-      <div className="flex flex-col items-center mt-14 mb-8 px-4 py-8 gap-4 bg-light-background dark:bg-dark-background rounded-lg donate">
+      <div className="flex flex-col items-center mt-14 mb-8 px-4 py-8 gap-4 bg-light-background dark:bg-dark-background rounded-lg box-section-shadow">
         <p
           className="markdown max-w-3xl text-center sm:text-lg"
           dangerouslySetInnerHTML={parseMDInline(config.plz_donate)}

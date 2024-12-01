@@ -100,13 +100,13 @@ html {
   @apply bg-gray-100 dark:bg-gray-800 rounded-md p-1;
 }
 
-.donate {
+.box-section-shadow {
   box-shadow:
     28px 28px 50px 0 #0d275020,
     -23px -23px 45px 0 #ffff;
 }
 
-.dark .donate {
+.dark .box-section-shadow {
   box-shadow:
     28px 28px 50px 0 #030109ff,
     -23px -23px 45px 0 #160844ff;

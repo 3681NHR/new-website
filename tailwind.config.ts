@@ -23,6 +23,7 @@ const config: Config = {
           primary: '#cc0000',
           secondary: '#4444b5',
           accent: '#bfc17b',
+          foreground: '#ece8e8',
         },
       },
     },

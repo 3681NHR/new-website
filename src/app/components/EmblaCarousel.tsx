@@ -3,12 +3,19 @@
 import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures';
 
 export function EmblaCarousel() {
-  const [emblaRef, emblaAPI] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ playOnInit: true, delay: 3000, stopOnMouseEnter: true }),
-  ]);
+  const emblaScrollRef = React.useRef(null);
+
+  const [emblaRef, emblaAPI] = useEmblaCarousel(
+    { loop: true, skipSnaps: true },
+    [
+      Autoplay({ playOnInit: true, delay: 3000, stopOnMouseEnter: true }),
+      WheelGesturesPlugin(),
+    ]
+  );
 
   const onPrevButtonClick = React.useCallback(() => {
     if (!emblaAPI) return;
@@ -22,8 +29,8 @@ export function EmblaCarousel() {
 
   return (
     <section className="embla">
-      <div className="embla-viewport" ref={emblaRef}>
-        <div className="embla-container">
+      <div className="embla-viewport" ref={emblaRef} id="emblaviewport">
+        <div className="embla-container" ref={emblaScrollRef}>
           <div className="embla-slide">
             <img src="/placeholder.png" className="embla-image"></img>
           </div>
@@ -46,7 +53,10 @@ export function EmblaCarousel() {
           ></ChevronLeft>
         </button>
         <button className="" onClick={onNextButtonClick}>
-          Next
+          <ChevronRight
+            className="w-8 h-8 stroke-light-text dark:stroke-dark-text"
+            strokeWidth={3}
+          ></ChevronRight>
         </button>
       </div>
     </section>
