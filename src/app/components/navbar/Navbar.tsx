@@ -43,11 +43,7 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
     >
       <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center">
-          <img
-            src="/imgs/nav_logo.png"
-            className="h-12 mr-3"
-            alt="RoboRaiders Logo"
-          />
+          <img src="/logo.svg" className="h-12 mr-3" alt="RoboRaiders Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             RoboRaiders
           </span>

@@ -99,3 +99,51 @@ html {
 .markdown code {
   @apply bg-gray-100 dark:bg-gray-800 rounded-md p-1;
 }
+
+.box-section-shadow {
+  box-shadow:
+    28px 28px 50px 0 #0d275020,
+    -23px -23px 45px 0 #ffff;
+}
+
+.dark .box-section-shadow {
+  box-shadow:
+    28px 28px 50px 0 #030109ff,
+    -23px -23px 45px 0 #160844ff;
+}
+
+.embla {
+  max-width: 48rem;
+  margin: auto;
+}
+
+.embla-viewport {
+  overflow: hidden;
+}
+
+.embla-container {
+  display: flex;
+}
+
+.embla-slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 100%;
+  min-width: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.embla-controls {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.embla-image {
+  width: auto;
+  height: 20rem;
+  object-fit: cover;
+  justify-self: center;
+  border-radius: 1rem;
+}

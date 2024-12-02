@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={
           font.className +
-          ' min-h-screen bg-slate-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100'
+          ' min-h-screen bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text'
         }
       >
         <Navbar>
