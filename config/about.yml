@@ -7,7 +7,7 @@
 sections:
 
   - id: "about" # This id is used for the table of contents, and for linking to the section. For example, this would be /about#2022-2023
-    title: "About RoboRaiders" # The title of the section, displayed in the table of contents.
+    title: "About the RoboRaiders" # The title of the section, displayed in the table of contents.
     content: "!file ./content/about.md" # The content of the section. Use !file [file path] to load data from another file relative to the location of this file
 
   - id: "frc-seasons" 
