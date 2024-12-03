@@ -7,12 +7,12 @@ Commits to the main branch will automatically deploy. Be sure to make changes on
 Once you have a copy of the code on your local machine, you can run the command below to start a dev server to preview your changes.
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-***Tip:** If you are getting 'module does not exist errors', make sure you have installed all the libraries by running `npm install` in the root directory.*
+***Tip:** If you are getting 'module does not exist errors', make sure you have installed all the libraries by running `pnpm install` in the root directory.*
 
 ## Editing Pages
 
