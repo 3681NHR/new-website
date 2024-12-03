@@ -6,7 +6,11 @@ import Confetti from 'react-confetti';
 export default function ConfettiSource() {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
+  const [recycle, setRecycle] = useState(false);
 
+  useEffect(() => {
+    setRecycle(Math.random() < 0.5);
+  }, []);
   useEffect(() => {
     const handleResize = () => {
       setWidth(window.innerWidth);
@@ -22,8 +26,9 @@ export default function ConfettiSource() {
       <Confetti
         width={width}
         height={height}
-        numberOfPieces={200}
-        recycle={false}
+        numberOfPieces={50000}
+        recycle={recycle}
+        </Confetti>
       />
     </div>
   );
