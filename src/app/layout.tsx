@@ -8,7 +8,7 @@ import NavbarDropdownItem from './components/navbar/NavbarDropdownItem';
 import AppearanceToggle from './components/navbar/AppearanceToggle';
 import { getConfig } from './util/configReader';
 
-const font = Inter({ weight: ['400', '600', '700'], subsets: ['latin-ext'] });
+const font = Inter({ subsets: ['latin'] });
 
 const globalConfig = getConfig('global.yml');
 
