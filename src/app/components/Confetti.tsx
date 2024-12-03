@@ -28,7 +28,6 @@ export default function ConfettiSource() {
         height={height}
         numberOfPieces={50000}
         recycle={recycle}
-        </Confetti>
       />
     </div>
   );
