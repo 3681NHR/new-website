@@ -27,10 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={
+        className={ () => {
+          alert(font);
+          return (
           font.className +
           ' min-h-screen bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text'
-        }
+        )}}
       >
         <Navbar>
           <NavbarItem title="Home" href="/"></NavbarItem>
