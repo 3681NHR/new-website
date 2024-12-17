@@ -1,7 +1,7 @@
 //import Link from 'next/link';
 import { getConfig, parseMD, parseMDInline } from '../util/configReader';
 import Footer from '../components/Footer';
-import Sidebar from '../components/Sidebar';
+import Link from 'next/link';
 
 export default function About() {
   // Reads the about.yml file in /config and parses it into a JS object
@@ -10,7 +10,7 @@ export default function About() {
   return (
     <main className="flex flex-col items-center justify-between p-4 pt-8 sm:p-12 pb-0 sm:pb-0 relative">
       <div className="flex flex-col gap-10 items-center justify-center lg:grid lg:grid-cols-[1fr_4fr_1fr] lg:items-start lg:justify-end">
-        {/*<div className="lg:mt-10">
+        <div className="lg:mt-10">
           <h2 className="text-2xl mb-2">Jump To:</h2>
           <ul className="markdown list-disc ml-4">
             {config.sections.map(section => (
@@ -22,8 +22,7 @@ export default function About() {
               </li>
             ))}
           </ul>
-        </div>*/}
-        <Sidebar items={[{ title: 'About', linkingId: '#about' }]} />
+        </div>
         <div className="flex flex-col items-center gap-12">
           {config.sections.map(section => (
             <div

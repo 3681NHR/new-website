@@ -146,4 +146,5 @@ html {
   object-fit: cover;
   justify-self: center;
   border-radius: 1rem;
+  margin: auto;
 }
