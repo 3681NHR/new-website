@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Mada } from 'next/font/google';
 import Navbar from './components/navbar/Navbar';
 import NavbarItem from './components/navbar/NavbarItem';
 import NavbarDropdown from './components/navbar/NavbarDropdown';
@@ -8,7 +8,7 @@ import NavbarDropdownItem from './components/navbar/NavbarDropdownItem';
 import AppearanceToggle from './components/navbar/AppearanceToggle';
 import { getConfig } from './util/configReader';
 
-const font = Poppins({ weight: ['400', '600', '700'], subsets: ['latin-ext'] });
+const font = Mada({ subsets: ['latin'] });
 
 const globalConfig = getConfig('global.yml');
 
