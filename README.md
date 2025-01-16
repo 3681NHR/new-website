@@ -12,7 +12,7 @@ pnpm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-***Tip:** If you are getting 'module does not exist errors', make sure you have installed all the libraries by running `pnpm install` in the root directory.*
+***Tip:** If you are getting 'module does not exist errors', make sure you have installed all the libraries by running `pnpm i` in the root directory.*
 
 ## Editing Pages
 
