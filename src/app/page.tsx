@@ -1,9 +1,7 @@
 import React from 'react';
-import { EmblaCarousel } from './components/EmblaCarousel';
+// import { EmblaCarousel } from './components/EmblaCarousel';
 import Footer from './components/Footer';
-{
-  /*import ImageCarousel from './components/ImageCarousel';*/
-}
+import ImageCarousel from './components/ImageCarousel';
 import { getConfig, parseMDInline } from './util/configReader';
 
 const bgimgStyle: React.CSSProperties = {
@@ -22,12 +20,12 @@ export default function Home() {
       >
         <div className="flex items-center justify-center w-full h-[100vh] flex-col">
           <img
-            className="w-64 shadow pt-[32rem]"
+            className="w-64 shadow"
             alt="RoboRaiders logo"
             src="/logo.svg"
           ></img>
           <h1
-            className="text-5xl font-bold text-center mb-4 sm:mb-6 mt-12"
+            className="text-5xl font-bold text-center sm:mb-6 mt-12 shadow-lg"
             dangerouslySetInnerHTML={parseMDInline(config.title)}
           ></h1>
         </div>
@@ -39,8 +37,7 @@ export default function Home() {
         className="max-w-3xl lg:max-w-4xl text-center sm:text-lg mb-10"
         dangerouslySetInnerHTML={parseMDInline(config.about)}
       ></p>
-      {/*<ImageCarousel pictures={config.pictures} autoScroll></ImageCarousel>*/}
-      <EmblaCarousel></EmblaCarousel>
+      <ImageCarousel pictures={config.pictures} autoScroll></ImageCarousel>
       {/*<div className="flex flex-col items-center mt-14 mb-8 px-4 py-8 gap-4 bg-light-background dark:bg-dark-background rounded-lg box-section-shadow">
         <p
           className="markdown max-w-3xl text-center sm:text-lg"

@@ -9,23 +9,3 @@ sections:
   - id: "about" # This id is used for the table of contents, and for linking to the section. For example, this would be /about#2022-2023
     title: "About the RoboRaiders" # The title of the section, displayed in the table of contents.
     content: "!file ./content/about.md" # The content of the section. Use !file [file path] to load data from another file relative to the location of this file
-
-  - id: "frc-seasons" 
-    title: "FRC Seasons"
-    content: "!file ./content/seasons.md"
-
-  - id: "game-design"
-    title: "Game Design"
-    content: "!file ./content/game-design.md"
-
-  - id: "structure"
-    title: "Club Structure"
-    content: "!file ./content/club-structure.md"
-
-  - id: "sub-teams"
-    title: "Sub-Teams"
-    content: "!file ./content/sub-teams.md"
-  
-  - id: "Officers"
-    title: "Officers"
-    content: "!file ./content/officers.md"

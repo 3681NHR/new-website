@@ -41,7 +41,7 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
       ref={nav}
       className="sticky top-0 left-0 right-0 z-[9999] bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
     >
-      <div className="max-w-screen-lg flex flex-wrap mx-auto py-3 justify-center">
+      <div className="max-w-screen-lg flex flex-wrap mx-auto py-2 justify-center">
         <button
           onClick={() => {
             setToggled(!toggled);

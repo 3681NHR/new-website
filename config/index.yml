@@ -15,7 +15,7 @@ about: >
 #  The url is the file path relative to the 'public' folder.
 pictures:
   - desc: 'Picture description'
-    url: '/imgs/picture.png'
+    url: '/homepagephotos/placeholder.png'
 
 plz_donate: >
   As a student-run team, we rely on donations and sponsors to run. If you would like to donate, please click [here](%donation_link%).
