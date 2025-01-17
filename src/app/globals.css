@@ -100,6 +100,12 @@ html {
   @apply bg-gray-100 dark:bg-gray-800 rounded-md p-1;
 }
 
+.homepagebackgroundimage {
+  background-image: url('/teamphoto.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .box-section-shadow {
   box-shadow:
     28px 28px 50px 0 #0d275020,

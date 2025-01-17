@@ -1,9 +1,9 @@
 import { getConfig } from '../util/configReader';
-import { Github, Instagram, Facebook, Mail, HandCoins } from 'lucide-react';
+import { Github, Instagram, Mail } from 'lucide-react';
 
 const Footer = () => {
   const { links } = getConfig('footer.yml');
-  const globalConfig = getConfig('global.yml');
+  // const globalConfig = getConfig('global.yml');
   return (
     <div className="w-full text-center mt-12 mb-4">
       <div className="w-full flex flex-wrap items-center justify-center my-6 gap-8 sm:gap-12">
@@ -25,7 +25,7 @@ const Footer = () => {
           <Instagram color="black" size={48} className="dark:hidden" />
           <Instagram color="white" size={48} className="hidden dark:block" />
         </a>
-        <a
+        {/*<a
           href={links.facebook}
           target="_blank"
           className="w-12 h-12 scale-100 hover:scale-110 transition-transform duration-300"
@@ -33,7 +33,7 @@ const Footer = () => {
         >
           <Facebook color="black" size={48} className="dark:hidden" />
           <Facebook color="white" size={48} className="hidden dark:block" />
-        </a>
+          </a>*/}
         <a
           href={links.blueAlliance}
           target="_blank"
@@ -43,7 +43,7 @@ const Footer = () => {
           <img
             className="w-full h-full"
             alt="Blue Alliance Logo"
-            src="/imgs/icons/blue_alliance.svg"
+            src="/bluealliance.svg"
           ></img>
         </a>
         <a
@@ -55,7 +55,7 @@ const Footer = () => {
           <Mail color="black" size={48} className="dark:hidden" />
           <Mail color="white" size={48} className="hidden dark:block" />
         </a>
-        <a
+        {/*<a
           href={globalConfig.donation_link}
           target="_blank"
           className="w-12 h-12 scale-100 hover:scale-110 transition-transform duration-300"
@@ -63,7 +63,7 @@ const Footer = () => {
         >
           <HandCoins color="black" size={48} className="dark:hidden" />
           <HandCoins color="white" size={48} className="hidden dark:block" />
-        </a>
+        </a>*/}
       </div>
       <span>RoboRaiders, FRC Team 3681, a FIRST® WA Team</span>
       <br></br>
