@@ -1,1 +1,3 @@
 <!-- This is a comment, this text will not appear on the page -->
+
+We are the FRC (First Robotics Competition) team of Nathan Hale High School in Seattle WA, number 3681. We build a robot every year for each year's game. We currently have around 25 students and four adult mentors. We're one of the smaller teams in the district with no dedicated teacher or classroom, and our robot is designed, built, programmed and tested by students. 
