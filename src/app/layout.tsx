@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import { Mada } from 'next/font/google';
 import Navbar from './components/navbar/Navbar';
 import NavbarItem from './components/navbar/NavbarItem';
-import NavbarDropdown from './components/navbar/NavbarDropdown';
-import NavbarDropdownItem from './components/navbar/NavbarDropdownItem';
+// import NavbarDropdown from './components/navbar/NavbarDropdown';
+// import NavbarDropdownItem from './components/navbar/NavbarDropdownItem';
 import AppearanceToggle from './components/navbar/AppearanceToggle';
 import { getConfig } from './util/configReader';
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const aboutConfig = getConfig('about.yml');
+  // const aboutConfig = getConfig('about.yml');
   return (
     <html lang="en" className="dark">
       <body
@@ -34,26 +34,9 @@ export default function RootLayout({
       >
         <Navbar>
           <NavbarItem title="Home" href="/"></NavbarItem>
-          <NavbarDropdown title="About" href="/about" pages="/about">
-            {aboutConfig.sections.map(section => (
-              <NavbarDropdownItem
-                title={section.title}
-                href={'/about#' + section.id}
-                key={section.id}
-              ></NavbarDropdownItem>
-            ))}
-          </NavbarDropdown>
+          <NavbarItem title="Team" href="/about"></NavbarItem>
+          <NavbarItem title="Robot" href="/robot"></NavbarItem>
           <NavbarItem title="Sponsors" href="/sponsors"></NavbarItem>
-          <NavbarDropdown title="Resources" pages={['/robot', '/team']}>
-            <NavbarDropdownItem
-              title="Our Robot"
-              href="/robot"
-            ></NavbarDropdownItem>
-            <NavbarDropdownItem
-              title="Our Team"
-              href="/team"
-            ></NavbarDropdownItem>
-          </NavbarDropdown>
           <NavbarItem title="Join" href="/join"></NavbarItem>
           <AppearanceToggle />
         </Navbar>
