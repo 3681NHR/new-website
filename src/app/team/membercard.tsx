@@ -1,4 +1,4 @@
-import { Card, Image, Box } from "@chakra-ui/react";
+import { Card, Image, Box } from '@chakra-ui/react';
 
 export interface MemberCard {
   photoURL: string;
@@ -18,9 +18,9 @@ export default function MemberCard({
       flexDirection="row"
       overflow="hidden"
       variant="subtle"
-      maxW={"30rem"}
+      maxW={'30rem'}
     >
-      <Image objectFit="cover" maxW={"200px"} src={photoURL} alt="" />
+      <Image objectFit="cover" maxW={'200px'} src={photoURL} alt="" />
       <Box>
         <Card.Body>
           <Card.Title mb="2">{name}</Card.Title>

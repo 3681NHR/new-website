@@ -1,7 +1,7 @@
-import { Box, Container, Flex, Heading, Text, VStack } from "@chakra-ui/react";
-import React from "react";
+import { Box, Container, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import React from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 interface HeroSectionProps {
   backgroundImage: string;
@@ -50,23 +50,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <VStack gap={6} textAlign="center">
             <Heading
               color="white"
-              fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+              fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
               fontWeight="bold"
             >
               {heading}
             </Heading>
             <Text
               color="white"
-              fontSize={{ base: "lg", md: "xl" }}
+              fontSize={{ base: 'lg', md: 'xl' }}
               maxW="600px"
             >
               {subheading}
             </Text>
             <Button
-              variant={"ghost"}
-              size={"lg"}
+              variant={'ghost'}
+              size={'lg'}
               onClick={onButtonClick}
-              _hover={{ transform: "translateY(-2px)" }}
+              _hover={{ transform: 'translateY(-2px)' }}
               transition="all 0.2s"
             >
               {buttonText}

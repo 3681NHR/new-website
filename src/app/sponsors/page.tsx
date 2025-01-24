@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Box,
@@ -9,9 +9,9 @@ import {
   Text,
   VStack,
   Badge,
-} from "@chakra-ui/react";
-import { motion } from "framer-motion";
-import sponsorsData from "./sponsors.json";
+} from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import sponsorsData from './sponsors.json';
 
 const MotionBox = motion.create(Box);
 
@@ -25,20 +25,20 @@ interface Sponsor {
 export default function SponsorsPage() {
   const getTierColor = (tier: string) => {
     switch (tier) {
-      case "raider":
-        return "red.700";
-      case "captain":
-        return "yellow.400";
+      case 'raider':
+        return 'red.700';
+      case 'captain':
+        return 'yellow.400';
       default:
-        return "gray.200";
+        return 'gray.200';
     }
   };
 
   return (
-    <Container maxW="container.xl" py={10} bg={"#000000"}>
+    <Container maxW="container.xl" py={10} bg={'#000000'}>
       <VStack gap={8} mb={12}>
         <Heading
-          textStyle={"5xl"}
+          textStyle={'5xl'}
           textAlign="center"
           background="white"
           //background="linear-gradient(45deg, rgba(46,30,170,1) 0%, rgba(253,107,45,1) 100%)"
@@ -55,9 +55,9 @@ export default function SponsorsPage() {
 
       <Grid
         templateColumns={{
-          base: "repeat(1, 1fr)",
-          md: "repeat(2, 1fr)",
-          lg: "repeat(3, 1fr)",
+          base: 'repeat(1, 1fr)',
+          md: 'repeat(2, 1fr)',
+          lg: 'repeat(3, 1fr)',
         }}
         gap={8}
       >
@@ -69,9 +69,9 @@ export default function SponsorsPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: index * 0.1 }}
-            onClick={() => window.open(sponsor.url, "_blank")}
-            cursor={"pointer"}
-            height={"100%"}
+            onClick={() => window.open(sponsor.url, '_blank')}
+            cursor={'pointer'}
+            height={'100%'}
           >
             <Box
               borderWidth="1px"
@@ -87,7 +87,7 @@ export default function SponsorsPage() {
               <Image
                 src={sponsor.logoUrl}
                 alt={`${sponsor.name} logo`}
-                maxH={"100px"}
+                maxH={'100px'}
                 mx="auto"
                 objectFit="contain"
               />
@@ -97,7 +97,7 @@ export default function SponsorsPage() {
                 fontWeight="semibold"
                 color="gray.emphasized"
                 position="absolute"
-                left={"50%"}
+                left={'50%'}
                 transform="translateX(-50%)"
                 bottom={0}
               >

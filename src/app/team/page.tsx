@@ -1,5 +1,5 @@
 //todo: add motion
-"use client";
+'use client';
 
 import {
   Box,
@@ -11,8 +11,8 @@ import {
   Image,
   Icon,
   Flex,
-} from "@chakra-ui/react";
-import { FaRobot, FaTrophy, FaUsers, FaClock } from "react-icons/fa";
+} from '@chakra-ui/react';
+import { FaRobot, FaTrophy, FaUsers, FaClock } from 'react-icons/fa';
 
 interface StatItemProps {
   icon: React.ElementType;
@@ -24,17 +24,17 @@ const StatItem: React.FC<StatItemProps> = ({ icon, label, value }) => {
   return (
     <VStack
       p={6}
-      bg={"gray.muted"}
+      bg={'gray.muted'}
       rounded="xl"
       shadow="md"
       transition="all 0.3s"
-      _hover={{ transform: "translateY(-5px)", shadow: "lg" }}
+      _hover={{ transform: 'translateY(-5px)', shadow: 'lg' }}
     >
       <Icon as={icon} w={10} h={10} color="blue.solid" />
       <Text fontSize="xl" fontWeight="bold">
         {value}
       </Text>
-      <Text color={"gray.fg"}>{label}</Text>
+      <Text color={'gray.fg'}>{label}</Text>
     </VStack>
   );
 };
@@ -42,11 +42,11 @@ const StatItem: React.FC<StatItemProps> = ({ icon, label, value }) => {
 export default function AboutPage() {
   return (
     //might change background color to {"bg"}
-    <Box bg={"#000000"} minH="100vh" py={20}>
+    <Box bg={'#000000'} minH="100vh" py={20}>
       <Container maxW="container.xl">
         <VStack gap={12}>
           <Flex
-            direction={{ base: "column", md: "row" }}
+            direction={{ base: 'column', md: 'row' }}
             align="center"
             justify="space-between"
             gap={8}
@@ -61,7 +61,7 @@ export default function AboutPage() {
               >
                 Team [Your Team Number]
               </Heading>
-              <Text fontSize="xl" color={"gray.fg"}>
+              <Text fontSize="xl" color={'gray.fg'}>
                 We are the FRC (First Robotics Competition) team of Nathan Hale
                 High School in Seattle WA, number 3681. We build a robot every
                 year for each year&apos;s game. We currently have around 25
@@ -95,4 +95,4 @@ export default function AboutPage() {
       </Container>
     </Box>
   );
-};
+}

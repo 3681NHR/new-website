@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
-import { Box } from "@chakra-ui/react";
+//import { useRef, useState } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, useGLTF } from '@react-three/drei';
+import { Box } from '@chakra-ui/react';
 
 function Model(props) {
-  const { scene } = useGLTF("/teapot.gltf");
+  const { scene } = useGLTF('/teapot.gltf');
 
   return <primitive object={scene} {...props} />;
 }
@@ -15,7 +15,7 @@ export default function RobotCanvas() {
   return (
     <Box
       position="fixed"
-      right={"0"}
+      right={'0'}
       bottom="50%"
       transform="translateY(+50%)"
       width="50%"

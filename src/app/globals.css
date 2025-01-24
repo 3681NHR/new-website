@@ -1,17 +1,17 @@
 :root {
-    --background: #000000;
-    --foreground: #dddddd;
+  --background: #000;
+  --foreground: #ddd;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #000000;
-        --foreground: #dddddd;
-    }
+  :root {
+    --background: #000;
+    --foreground: #ddd;
+  }
 }
 
 body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
 }
