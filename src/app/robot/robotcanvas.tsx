@@ -1,11 +1,11 @@
 'use client';
-
+//ill fix it later
 //import { useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import { Box } from '@chakra-ui/react';
 
-function Model(props) {
+function Model(props: { position: number[]; scale: number }) {
   const { scene } = useGLTF('/teapot.gltf');
 
   return <primitive object={scene} {...props} />;

@@ -20,7 +20,11 @@ interface StatItemProps {
   value: string;
 }
 
-const StatItem: React.FC<StatItemProps> = ({ icon, label, value }) => {
+const StatItem: React.FC<StatItemProps> = ({
+  icon,
+  label,
+  value,
+}: StatItemProps) => {
   return (
     <VStack
       p={6}
@@ -52,15 +56,6 @@ export default function AboutPage() {
             gap={8}
           >
             <Box flex={1}>
-              <Heading
-                as="h1"
-                size="2xl"
-                mb={6}
-                bgGradient="linear(to-r, blue.400, purple.500)"
-                bgClip="text"
-              >
-                Team [Your Team Number]
-              </Heading>
               <Text fontSize="xl" color={'gray.fg'}>
                 We are the FRC (First Robotics Competition) team of Nathan Hale
                 High School in Seattle WA, number 3681. We build a robot every
