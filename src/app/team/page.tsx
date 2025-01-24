@@ -4,7 +4,6 @@
 import {
   Box,
   Container,
-  Heading,
   Text,
   SimpleGrid,
   VStack,
@@ -13,6 +12,11 @@ import {
   Flex,
 } from '@chakra-ui/react';
 import { FaRobot, FaTrophy, FaUsers, FaClock } from 'react-icons/fa';
+import MemberCard from './membercard';
+
+import { MemberCard as Member } from './membercard';
+
+import membersData from './members.json';
 
 interface StatItemProps {
   icon: React.ElementType;
@@ -86,6 +90,19 @@ export default function AboutPage() {
             <StatItem icon={FaRobot} value="inf" label="Robots Built" />
             <StatItem icon={FaClock} value="inf" label="Hours of Work" />
           </SimpleGrid>
+          <Box overflowX="auto" w="full">
+            <Flex gap={4} minW="max-content" py={4}>
+              {membersData.members.map((member: Member, index) => (
+                <MemberCard
+                  key={index}
+                  name={member.name}
+                  photoURL={member.photoURL}
+                  description={member.description}
+                  group={member.group}
+                />
+              ))}
+            </Flex>
+          </Box>
         </VStack>
       </Container>
     </Box>

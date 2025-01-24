@@ -1,0 +1,40 @@
+{
+  "members": [
+    {
+      "name": "idk",
+      "photoURL": "/placeholder200sq.png",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Finibus sed condimentum sed;",
+      "group": "Coding"
+    },
+    {
+      "name": "idk",
+      "photoURL": "/placeholder200sq.png",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Finibus sed condimentum sed;",
+      "group": "Design"
+    },
+    {
+      "name": "idk",
+      "photoURL": "/placeholder200sq.png",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Finibus sed condimentum sed;",
+      "group": "Marketing"
+    },
+    {
+      "name": "idk",
+      "photoURL": "/placeholder200sq.png",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Finibus sed condimentum sed;",
+      "group": "Coding"
+    },
+    {
+      "name": "idk",
+      "photoURL": "/placeholder200sq.png",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Finibus sed condimentum sed;",
+      "group": "Design"
+    },
+    {
+      "name": "idk",
+      "photoURL": "/placeholder200sq.png",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Finibus sed condimentum sed;",
+      "group": "Marketing"
+    }
+  ]
+}
