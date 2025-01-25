@@ -19,7 +19,6 @@ export default tseslint.config(
       'src/components/ui',
       '.next',
       '.git',
-      'src/app/robot/robotcanvas.tsx',
     ],
   },
   js.configs.recommended,
