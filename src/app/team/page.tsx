@@ -103,6 +103,37 @@ export default function AboutPage() {
               ))}
             </Flex>
           </Box>
+          <Box maxW={'70%'}>
+            <Text fontSize="xl" color={'gray.fg'}>
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Non
+              pellentesque et a ipsum sed imperdiet aenean sed malesuada.
+              Placerat tempus risus lobortis metus litora hac himenaeos nunc.
+              Orci vitae felis vitae sem natoque pulvinar donec maecenas. Neque
+              ullamcorper quisque posuere aliquet consectetur consequat
+              adipiscing. Netus vulputate vehicula eros pulvinar iaculis est.
+              Venenatis amet mus pellentesque ultrices suspendisse parturient
+              feugiat lacinia. <br /> Sodales condimentum quam parturient et
+              imperdiet pulvinar habitasse semper. Accumsan luctus integer non
+              porta ornare. Elit taciti varius proin gravida torquent. Ridiculus
+              cras suscipit per vestibulum adipiscing taciti massa orci. Fames
+              massa praesent nostra cubilia inceptos lobortis. Nam malesuada
+              duis ornare pretium, aenean rhoncus nec maximus. Ultrices faucibus
+              vel euismod; posuere nulla dictumst vitae. Iaculis et dolor semper
+              pulvinar mus laoreet praesent parturient lacus. Purus metus aptent
+              congue aliquet nostra. Massa tristique ultricies lacus ridiculus
+              ex duis. Maximus donec nec eu praesent hendrerit sit commodo
+              felis. Ipsum at eget; enim aptent nascetur netus. Diam faucibus
+              mus suspendisse nulla suspendisse. Nascetur ultricies laoreet
+              dictum vulputate conubia pulvinar. Consectetur varius placerat
+              egestas dui scelerisque vitae. Non torquent sit interdum sagittis
+              non augue mauris tempor. Leo ligula class ullamcorper ullamcorper
+              suscipit bibendum commodo suspendisse. Pellentesque montes
+              sollicitudin vivamus cursus fusce tempor. Ante malesuada montes
+              suspendisse auctor facilisis rhoncus; eu rutrum gravida. Sociosqu
+              aliquam senectus ut eleifend senectus himenaeos. Diam ligula
+              mattis libero, nisi nulla donec.
+            </Text>
+          </Box>
         </VStack>
       </Container>
     </Box>

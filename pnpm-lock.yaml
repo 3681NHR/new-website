@@ -32,6 +32,9 @@ importers:
       next-themes:
         specifier: ^0.4.4
         version: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      plaiceholder:
+        specifier: ^3.0.0
+        version: 3.0.0(sharp@0.33.5)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -41,6 +44,9 @@ importers:
       react-icons:
         specifier: ^5.4.0
         version: 5.4.0(react@19.0.0)
+      sharp:
+        specifier: ^0.33.5
+        version: 0.33.5
       three:
         specifier: ^0.172.0
         version: 0.172.0
@@ -2353,6 +2359,11 @@ packages:
     engines: {node: '>=0.10'}
     hasBin: true
 
+  plaiceholder@3.0.0:
+    resolution: {integrity: sha512-jwHxxHPnr1BwRzPCeZgEK2BMsEy2327sWynw3qb6XC/oGgGDUTPtR8pFxFQmNArhMBwhkUbUr5OPhhIJpCa8eQ==}
+    peerDependencies:
+      sharp: '>= 0.30.6'
+
   possible-typed-array-names@1.0.0:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
     engines: {node: '>= 0.4'}
@@ -4479,13 +4490,11 @@ snapshots:
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
-    optional: true
 
   color@4.2.3:
     dependencies:
       color-convert: 2.0.1
       color-string: 1.9.1
-    optional: true
 
   colord@2.9.3: {}
 
@@ -4585,8 +4594,7 @@ snapshots:
     dependencies:
       webgl-constants: 1.1.1
 
-  detect-libc@2.0.3:
-    optional: true
+  detect-libc@2.0.3: {}
 
   dir-glob@3.0.1:
     dependencies:
@@ -5318,8 +5326,7 @@ snapshots:
 
   is-arrayish@0.2.1: {}
 
-  is-arrayish@0.3.2:
-    optional: true
+  is-arrayish@0.3.2: {}
 
   is-async-function@2.1.1:
     dependencies:
@@ -5783,6 +5790,10 @@ snapshots:
 
   pidtree@0.6.0: {}
 
+  plaiceholder@3.0.0(sharp@0.33.5):
+    dependencies:
+      sharp: 0.33.5
+
   possible-typed-array-names@1.0.0: {}
 
   postcss-media-query-parser@0.2.3: {}
@@ -6028,7 +6039,6 @@ snapshots:
       '@img/sharp-wasm32': 0.33.5
       '@img/sharp-win32-ia32': 0.33.5
       '@img/sharp-win32-x64': 0.33.5
-    optional: true
 
   shebang-command@2.0.0:
     dependencies:
@@ -6071,7 +6081,6 @@ snapshots:
   simple-swizzle@0.2.2:
     dependencies:
       is-arrayish: 0.3.2
-    optional: true
 
   slash@3.0.0: {}
 
@@ -6488,6 +6497,7 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
       react-icons: 5.4.0(react@19.0.0)
+      sharp: 0.33.5
       three: 0.172.0
     transitivePeerDependencies:
       - '@babel/core'
