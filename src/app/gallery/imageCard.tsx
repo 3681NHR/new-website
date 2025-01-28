@@ -21,8 +21,8 @@ export default function ImageCard({
   imageUrl,
   previewWidth,
   previewHeight,
-  //width,
-  //height,
+  width,
+  height,
   imgPlaceholderData,
 }: ImageCardProps) {
   const boxSize = (size: '1x1' | '2x1' | '1x2') => {
@@ -38,11 +38,19 @@ export default function ImageCard({
     }
   };
 
+  const widtherrorfixplaceholder = width * 2;
+  const heighterrorfixplaceholder = height * 2;
+
   return (
     <GridItem
       colSpan={boxSize(aspectRatio as '1x1' | '2x1' | '1x2').colSpan}
       rowSpan={boxSize(aspectRatio as '1x1' | '2x1' | '1x2').rowSpan}
     >
+      <Box
+        display="none"
+        height={heighterrorfixplaceholder}
+        width={widtherrorfixplaceholder}
+      />
       <MotionBox
         style={{ borderRadius: 20 }}
         whileHover={{ scale: 1.05 }}

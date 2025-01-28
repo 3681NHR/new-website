@@ -19,6 +19,8 @@ export default function ImageGrid() {
           previewWidth={image.previewWidth}
           previewHeight={image.previewHeight}
           imgPlaceholderData={image.imgPlaceholderData}
+          width={image.width}
+          height={image.height}
         />
       ))}
     </Grid>
