@@ -7,7 +7,7 @@ export default function ImageGrid() {
   return (
     <Grid
       templateColumns="repeat(4, 1fr)"
-      gap="1"
+      gap="6"
       //autoRows="auto"
       //autoFlow="dense"
     >

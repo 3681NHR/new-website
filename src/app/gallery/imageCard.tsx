@@ -1,7 +1,7 @@
 'use client';
 
 import { Box, GridItem, Image as ChakraImage } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import Image from 'next/image';
 
 const MotionBox = motion.create(Box);
@@ -44,16 +44,17 @@ export default function ImageCard({
       rowSpan={boxSize(aspectRatio as '1x1' | '2x1' | '1x2').rowSpan}
     >
       <MotionBox
-        //whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95, transition: { duration: 0.1 } }}
-        //initial={{ opacity: 0, y: 20 }}
+        style={{ borderRadius: 20 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        //initial={{ }}
         //animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: 0.1 }}
+        transition={{ duration: 0.1, ease: 'easeInOut' }}
         cursor={'pointer'}
         height={'100%'}
         position={'relative'}
       >
-        <ChakraImage asChild>
+        <ChakraImage rounded={'2xl'} asChild>
           <Image
             src={imageUrl}
             alt="img"

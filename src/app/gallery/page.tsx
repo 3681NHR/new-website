@@ -1,9 +1,10 @@
 import ImageGrid from './imageGrid';
+import { Box } from '@chakra-ui/react';
 
 export default function GalleryPage() {
   return (
-    <div>
+    <Box mt="20" mx="8">
       <ImageGrid />
-    </div>
+    </Box>
   );
 }
