@@ -10,7 +10,7 @@ import {
   VStack,
   Badge,
 } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import sponsorsData from './sponsors.json';
 
 const MotionBox = motion.create(Box);

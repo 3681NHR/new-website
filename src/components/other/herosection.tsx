@@ -28,17 +28,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
     >
-      {/* Overlay to make text more readable */}
-      <Box
-        position="absolute"
-        top="0"
-        left="0"
-        w="100%"
-        h="100%"
-        bg="blackAlpha.500"
-      />
-
-      {/* Content */}
       <Container maxW="container.xl" h="100%">
         <Flex
           h="100%"
@@ -47,7 +36,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           position="relative"
           zIndex={1}
         >
-          <VStack gap={6} textAlign="center">
+          <VStack
+            gap={6}
+            textAlign="center"
+            //backgroundColor={'blackAlpha.600'}
+            p="4"
+            backdropFilter="blur(10px);"
+            rounded="xl"
+            shadow="0 0 20px 3px #000"
+          >
             <Heading
               color="white"
               fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}

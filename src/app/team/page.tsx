@@ -12,11 +12,11 @@ import {
   Flex,
 } from '@chakra-ui/react';
 import { FaRobot, FaTrophy, FaUsers, FaClock } from 'react-icons/fa';
-import MemberCard from './membercard';
+//import MemberCard from './membercard';
 
-import { MemberCard as Member } from './membercard';
+//import { MemberCard as Member } from './membercard';
 
-import membersData from './members.json';
+//import membersData from './members.json';
 
 interface StatItemProps {
   icon: React.ElementType;
@@ -81,16 +81,12 @@ export default function AboutPage() {
           </Flex>
 
           <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={8} w="full">
-            <StatItem
-              icon={FaUsers}
-              value="more than 20"
-              label="Team Members"
-            />
-            <StatItem icon={FaTrophy} value="idk" label="Awards Won" />
-            <StatItem icon={FaRobot} value="inf" label="Robots Built" />
-            <StatItem icon={FaClock} value="inf" label="Hours of Work" />
+            <StatItem icon={FaUsers} value="20+" label="Team Members" />
+            <StatItem icon={FaTrophy} value="4" label="Awards Won" />
+            <StatItem icon={FaRobot} value="12" label="Robots Built" />
+            <StatItem icon={FaClock} value="infinity" label="Hours of Work" />
           </SimpleGrid>
-          <Box overflowX="auto" w="full">
+          {/* <Box overflowX="auto" w="full">
             <Flex gap={4} minW="max-content" py={4}>
               {membersData.members.map((member: Member, index) => (
                 <MemberCard
@@ -102,8 +98,8 @@ export default function AboutPage() {
                 />
               ))}
             </Flex>
-          </Box>
-          <Box maxW={'70%'}>
+          </Box> */}
+          {/* <Box maxW={'70%'}>
             <Text fontSize="xl" color={'gray.fg'}>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Non
               pellentesque et a ipsum sed imperdiet aenean sed malesuada.
@@ -133,7 +129,7 @@ export default function AboutPage() {
               aliquam senectus ut eleifend senectus himenaeos. Diam ligula
               mattis libero, nisi nulla donec.
             </Text>
-          </Box>
+          </Box> */}
         </VStack>
       </Container>
     </Box>

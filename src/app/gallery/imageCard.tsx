@@ -21,8 +21,8 @@ export default function ImageCard({
   imageUrl,
   previewWidth,
   previewHeight,
-  width,
-  height,
+  //width,
+  //height,
   imgPlaceholderData,
 }: ImageCardProps) {
   const boxSize = (size: '1x1' | '2x1' | '1x2') => {

@@ -1,0 +1,12 @@
+
+- [ ] make cool robot page
+- [x] make people cards for about page
+- [ ] add people to about page
+- [x] add photo gallery
+- [ ] add photos to photo gallery
+- [x] add footer with links
+- [ ] SEO optimize
+- [ ] Light mode (Maybe)
+- [ ] Add text and more stuff to about page
+- [x] replace framer-motion with motion
+- [ ] add cool animation to gallery hover over image
