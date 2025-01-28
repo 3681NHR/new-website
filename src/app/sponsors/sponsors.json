@@ -1,0 +1,16 @@
+{
+  "sponsors": [
+    {
+      "name": "Boeing",
+      "logoUrl": "/sponsorlogos/boeing.svg",
+      "tier": "raider",
+      "url": "https://www.boeing.com/"
+    },
+    {
+      "name": "OSPI",
+      "logoUrl": "/sponsorlogos/ospi.png",
+      "tier": "captain",
+      "url": "https://ospi.k12.wa.us/"
+    }
+  ]
+}

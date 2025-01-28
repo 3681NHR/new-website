@@ -9,7 +9,17 @@ import globals from 'globals';
 
 export default tseslint.config(
   {
-    ignores: ['dist', 'bin', 'build', 'node_modules', 'src/types'],
+    ignores: [
+      'dist',
+      'bin',
+      'build',
+      'node_modules',
+      'src/types',
+      'public',
+      'src/components/ui',
+      '.next',
+      '.git',
+    ],
   },
   js.configs.recommended,
   eslint.configs.recommended,
@@ -30,6 +40,7 @@ export default tseslint.config(
       react: { version: 'detect' },
     },
     rules: {
+      'react/no-unknown-property': 'off',
       'react/react-in-jsx-scope': 0,
       ...reactHooks.configs.recommended.rules,
       'n/no-missing-import': [

@@ -1,7 +1,0 @@
-# This file does not control a specific page of the site, but it is used to add custom redirects or shortened links to the site.
-# Format: 
-# - source: "/example"
-#   destination: "https://google.com"
-redirects:
-  - source : "/hale"
-    destination : "https://halehs.seattleschools.org/"

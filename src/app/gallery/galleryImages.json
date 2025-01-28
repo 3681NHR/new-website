@@ -1,0 +1,13 @@
+{
+  "galleryImages": [
+    {
+      "imageUrl": "/placeholder200sq.png",
+      "aspectRatio": "1x1",
+      "imgPlaceholderData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAH0lEQVR4nGPQ0tL6j4wZjh079h+G79+/jyoAwgzoWgAZnia8kFEm2gAAAABJRU5ErkJggg==",
+      "previewWidth": 200,
+      "previewHeight": 200,
+      "width": 200,
+      "height": 200
+    }
+  ]
+}
