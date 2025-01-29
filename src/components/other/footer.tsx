@@ -34,6 +34,7 @@ export default function Footer() {
                     '_blank'
                   )
                 }
+                aria-label="Instagram Link"
               >
                 <FaInstagram />
               </Button>
@@ -41,6 +42,7 @@ export default function Footer() {
                 onClick={() =>
                   window.open('https://github.com/3681NHR', '_blank')
                 }
+                aria-label="Github Link"
               >
                 <FaGithub />
               </Button>
@@ -48,6 +50,7 @@ export default function Footer() {
                 onClick={() =>
                   window.open('mailto:nhalerobotics@gmail.com', '_blank')
                 }
+                aria-label="Email to nhalerobotics@gmail.com"
               >
                 <FaEnvelope />
               </Button>
@@ -58,6 +61,7 @@ export default function Footer() {
                     '_blank'
                   )
                 }
+                aria-label="Blue Alliance Link"
               >
                 <img
                   width={'12rem'}

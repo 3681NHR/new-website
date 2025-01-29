@@ -12,11 +12,12 @@ const nextConfig: NextConfig = {
           {
             key: 'Content-Security-Policy',
             value: `
-              default-src 'self';
+              default-src 'self' wasm-unsafe-eval;
               script-src 'self' 'unsafe-inline';
               style-src 'self' 'unsafe-inline';
               img-src 'self' data: https:;
               font-src 'self';
+              connect-src 'self' data:;
             `
               .replace(/\s{2,}/g, ' ')
               .trim(),

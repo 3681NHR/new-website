@@ -11,3 +11,4 @@
 - [x] replace framer-motion with motion
 - [ ] add cool animation to gallery hover over image
 - [ ] add more SSR
+- [ ] accesibility
