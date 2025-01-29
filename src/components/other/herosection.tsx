@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 
 interface HeroSectionProps {
-  backgroundImage: string;
+  //backgroundImage: string;
   heading: string;
   subheading: string;
   buttonText: string;
@@ -12,7 +12,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
-  backgroundImage,
+  //backgroundImage,
   heading,
   subheading,
   buttonText,
@@ -23,10 +23,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       h="100vh"
       w="100%"
       position="relative"
-      backgroundImage={`url(${backgroundImage})`}
-      backgroundSize="cover"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
+      //backgroundImage={`url(${backgroundImage})`}
+      //backgroundSize="cover"
+      //backgroundPosition="center"
+      //backgroundRepeat="no-repeat"
     >
       <Container maxW="container.xl" h="100%">
         <Flex
