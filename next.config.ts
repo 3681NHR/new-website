@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
             key: 'Content-Security-Policy',
             value: `
 <<<<<<< HEAD
+<<<<<<< HEAD
               default-src 'self' 'wasm-unsafe-eval';
               script-src 'self' 'unsafe-inline' static.cloudflareinsights.com 'unsafe-eval';
               style-src 'self' 'unsafe-inline';
@@ -20,15 +21,26 @@ const nextConfig: NextConfig = {
               font-src 'self';
               connect-src 'self' data: cloudflareinsights.com;
 =======
+=======
+>>>>>>> 9c45d3b (add CSP)
               default-src 'self' wasm-unsafe-eval;
+=======
+              default-src 'self';
+>>>>>>> ea43748 (add CSP)
               script-src 'self' 'unsafe-inline';
               style-src 'self' 'unsafe-inline';
               img-src 'self' data: https:;
               font-src 'self';
+<<<<<<< HEAD
               connect-src 'self' data:;
               script-src static.cloudflareinsights.com;
               connect-src cloudflareinsights.com;
+<<<<<<< HEAD
 >>>>>>> 071bafd (update (#23))
+=======
+=======
+>>>>>>> ea43748 (add CSP)
+>>>>>>> 9c45d3b (add CSP)
             `
               .replace(/\s{2,}/g, ' ')
               .trim(),
