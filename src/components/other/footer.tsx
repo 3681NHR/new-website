@@ -29,6 +29,7 @@ export default function Footer() {
         <GridItem>
           <Center h="full">
             <ButtonGroup size="md" variant="outline">
+<<<<<<< HEAD
               <FooterButton
                 url="https://www.instagram.com/roboraiders3681"
                 ariaLabel="Link to Instagram"
@@ -50,6 +51,43 @@ export default function Footer() {
               <FooterButton
                 url="https://www.thebluealliance.com/team/3681"
                 ariaLabel="Link to Blue Alliance"
+=======
+              <Button
+                onClick={() =>
+                  window.open(
+                    'https://www.instagram.com/roboraiders3681',
+                    '_blank'
+                  )
+                }
+                aria-label="Instagram Link"
+              >
+                <FaInstagram />
+              </Button>
+              <Button
+                onClick={() =>
+                  window.open('https://github.com/3681NHR', '_blank')
+                }
+                aria-label="Github Link"
+              >
+                <FaGithub />
+              </Button>
+              <Button
+                onClick={() =>
+                  window.open('mailto:nhalerobotics@gmail.com', '_blank')
+                }
+                aria-label="Email to nhalerobotics@gmail.com"
+              >
+                <FaEnvelope />
+              </Button>
+              <Button
+                onClick={() =>
+                  window.open(
+                    'https://www.thebluealliance.com/team/3681',
+                    '_blank'
+                  )
+                }
+                aria-label="Blue Alliance Link"
+>>>>>>> 1fdc1e3 (fix CSP)
               >
                 <svg
                   version="1.1"
