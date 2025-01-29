@@ -35,8 +35,14 @@
         "react-icons": "^5.4.0",
         "sharp": "^0.33.5",
         "three": "^0.172.0",
+<<<<<<< HEAD
         "turnstile-next": "^0.2.2",
+<<<<<<< HEAD
 >>>>>>> 071bafd (update (#23))
+=======
+=======
+>>>>>>> 995f9a4 (replace nodejs with bun 😎)
+>>>>>>> 7a09503 (replace nodejs with bun 😎)
         "websiterewrite": "file:",
       },
       "devDependencies": {
@@ -1458,10 +1464,17 @@
     "tunnel-rat": ["tunnel-rat@0.1.2", "", { "dependencies": { "zustand": "^4.3.2" } }, "sha512-lR5VHmkPhzdhrM092lI2nACsLO4QubF0/yoOhzX7c+wIpbN1GjHNzCc91QlpxBi+cnx8vVJ+Ur6vL5cEoQPFpQ=="],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "turnstile-next": ["turnstile-next@0.2.2", "", { "peerDependencies": { "react": ">=16" } }, "sha512-9/Ft+XnaqIot0aIcxI+5Eu7HboaG59AjwdiJkL7y8ZW1JGKYXsgseY4o+AyZ4XuALKJyZ/EYibuJXCaHrym7gA=="],
 
 >>>>>>> 071bafd (update (#23))
+=======
+    "turnstile-next": ["turnstile-next@0.2.2", "", { "peerDependencies": { "react": ">=16" } }, "sha512-9/Ft+XnaqIot0aIcxI+5Eu7HboaG59AjwdiJkL7y8ZW1JGKYXsgseY4o+AyZ4XuALKJyZ/EYibuJXCaHrym7gA=="],
+
+=======
+>>>>>>> 995f9a4 (replace nodejs with bun 😎)
+>>>>>>> 7a09503 (replace nodejs with bun 😎)
     "type-check": ["type-check@0.4.0", "", { "dependencies": { "prelude-ls": "^1.2.1" } }, "sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew=="],
 
     "type-fest": ["type-fest@0.20.2", "", {}, "sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ=="],
