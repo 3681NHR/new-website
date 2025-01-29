@@ -1,11 +1,11 @@
 //'use client';
 
 import HeroSection from '@/components/other/herosection';
-import MainPageLayout from '@/components/other/heroImage';
 
 export default function Home() {
   return (
     <div>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <HeroSection />
 =======
@@ -19,6 +19,9 @@ export default function Home() {
         />
       </MainPageLayout>
 >>>>>>> 9415b64 (trying to fix hero section)
+=======
+      <HeroSection />
+>>>>>>> 498f866 (fix hero section bugs)
     </div>
   );
 }

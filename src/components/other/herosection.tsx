@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 import HeroImage from '@/components/other/heroImage';
 import { Box, Container } from '@chakra-ui/react';
+=======
+'use client';
+
+import HeroImage from '@/components/other/heroImage';
+import { Box, Container, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import React from 'react';
+>>>>>>> 498f866 (fix hero section bugs)
 
 // import JoinButton from '@/components/other/joinButton';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 export default function HeroSection() {
 =======
@@ -46,6 +55,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       >
         <HeroImage />
         {/* <Flex
+=======
+export default function HeroSection() {
+  return (
+    <Box h="100vh" w="100%" position="relative">
+      <Container maxW="container.xl" h="100%" backgroundColor={'transparent'}>
+        <HeroImage />
+        <Flex
+>>>>>>> 498f866 (fix hero section bugs)
           h="100%"
           align="center"
           justify="center"
@@ -75,7 +92,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             >
               Team 3681
             </Text>
+<<<<<<< HEAD
             <JoinButton />
+=======
+            <Button
+              variant={'ghost'}
+              size={'lg'}
+              onClick={() => {}}
+              _hover={{ transform: 'translateY(-2px)' }}
+              transition="all 0.2s"
+            >
+              Join us
+            </Button>
+>>>>>>> 498f866 (fix hero section bugs)
           </VStack>
         </Flex> */}
       </Container>
