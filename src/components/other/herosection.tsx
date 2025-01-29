@@ -3,15 +3,40 @@ import { Box, Container } from '@chakra-ui/react';
 
 // import JoinButton from '@/components/other/joinButton';
 
+<<<<<<< HEAD
 export default function HeroSection() {
+=======
+interface HeroSectionProps {
+  //backgroundImage: string;
+  heading: string;
+  subheading: string;
+  buttonText: string;
+  onButtonClick?: () => void;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({
+  //backgroundImage,
+  heading,
+  subheading,
+  buttonText,
+  onButtonClick,
+}) => {
+>>>>>>> 9415b64 (trying to fix hero section)
   return (
     <Box
       h="75vh"
       w={{ base: 'full', lg: '50%', md: '75%', xl: '40%' }}
       position="relative"
+<<<<<<< HEAD
       mx={'auto'}
       mt={'6rem'}
       overflow={'visible'}
+=======
+      //backgroundImage={`url(${backgroundImage})`}
+      //backgroundSize="cover"
+      //backgroundPosition="center"
+      //backgroundRepeat="no-repeat"
+>>>>>>> 9415b64 (trying to fix hero section)
     >
       <Container
         maxW="full"
