@@ -9,9 +9,15 @@ import {
 import { FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
 import FooterButton from '@/components/other/footerButton';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { ColorModeButton } from '@/components/ui/color-mode';
 >>>>>>> 071bafd (update (#23))
+=======
+import { ColorModeButton } from '@/components/ui/color-mode';
+=======
+>>>>>>> ee5b73c (changed some stuff)
+>>>>>>> 358d7d1 (changed some stuff)
 
 export default function Footer() {
   return (
@@ -29,6 +35,7 @@ export default function Footer() {
         <GridItem>
           <Center h="full">
             <ButtonGroup size="md" variant="outline">
+<<<<<<< HEAD
 <<<<<<< HEAD
               <FooterButton
                 url="https://www.instagram.com/roboraiders3681"
@@ -60,24 +67,26 @@ export default function Footer() {
                   )
                 }
                 aria-label="Instagram Link"
+=======
+              <FooterButton
+                url="https://www.instagram.com/roboraiders3681"
+                ariaLabel="Link to Instagram"
+>>>>>>> ee5b73c (changed some stuff)
               >
                 <FaInstagram />
-              </Button>
-              <Button
-                onClick={() =>
-                  window.open('https://github.com/3681NHR', '_blank')
-                }
-                aria-label="Github Link"
+              </FooterButton>
+              <FooterButton
+                url="https://github.com/3681NHR"
+                ariaLabel="Link to Github"
               >
                 <FaGithub />
-              </Button>
-              <Button
-                onClick={() =>
-                  window.open('mailto:nhalerobotics@gmail.com', '_blank')
-                }
-                aria-label="Email to nhalerobotics@gmail.com"
+              </FooterButton>
+              <FooterButton
+                url="mailto:nhalerobotics@gmail.com"
+                ariaLabel="Mail to nhalerobotics@gmail.com"
               >
                 <FaEnvelope />
+<<<<<<< HEAD
               </Button>
               <Button
                 onClick={() =>
@@ -134,7 +143,24 @@ export default function Footer() {
 <<<<<<< HEAD
 =======
               <ColorModeButton />
+<<<<<<< HEAD
 >>>>>>> 071bafd (update (#23))
+=======
+=======
+              </FooterButton>
+              <FooterButton
+                url="https://www.thebluealliance.com/team/3681"
+                ariaLabel="Link to Blue Alliance"
+              >
+                <img
+                  width={'12rem'}
+                  height={'12rem'}
+                  alt="Blue Alliance Logo"
+                  src="/icons/bluealliance.svg"
+                ></img>
+              </FooterButton>
+>>>>>>> ee5b73c (changed some stuff)
+>>>>>>> 358d7d1 (changed some stuff)
             </ButtonGroup>
           </Center>
         </GridItem>

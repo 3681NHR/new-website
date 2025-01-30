@@ -46,11 +46,12 @@ export default function HeroImage() {
       <Image
         src="/teamphoto.webp"
         alt="Cover Image"
-        width={3073}
-        height={1415}
+        // width={3073}
+        // height={1415}
+        fill
         className="bg-img"
         priority
-        sizes="100vw"
+        //sizes="100vw"
       />
     </ChakraImage>
 >>>>>>> 498f866 (fix hero section bugs)
