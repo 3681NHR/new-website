@@ -1,7 +1,7 @@
-import HeroImage from '@/components/other/heroImage';
-import { Box, Container, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+// import HeroImage from '@/components/other/heroImage';
+import { Box, Container } from '@chakra-ui/react';
 
-import JoinButton from '@/components/other/joinButton';
+// import JoinButton from '@/components/other/joinButton';
 
 export default function HeroSection() {
   return (
@@ -9,11 +9,11 @@ export default function HeroSection() {
       <Container
         maxW="full"
         h="100%"
-        backgroundColor={'transparent'}
+        backgroundColor={'bg'}
         overflow={'visible'}
       >
-        <HeroImage />
-        <Flex
+        {/* <HeroImage /> */}
+        {/* <Flex
           h="100%"
           align="center"
           justify="center"
@@ -45,7 +45,7 @@ export default function HeroSection() {
             </Text>
             <JoinButton />
           </VStack>
-        </Flex>
+        </Flex> */}
       </Container>
     </Box>
   );

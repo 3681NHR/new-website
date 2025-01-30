@@ -1,15 +1,14 @@
-
-- [ ] make cool robot page
 - [x] make people cards for about page
-- [ ] add people to about page
 - [x] add photo gallery
-- [ ] add photos to photo gallery
 - [x] add footer with links
-- [ ] SEO optimize
-- [ ] Light mode (Maybe)
-- [ ] Add text and more stuff to about page
+- [x] Light mode (Maybe)
 - [x] replace framer-motion with motion
-- [ ] add cool animation to gallery hover over image
 - [x] add SSR to most stuff that can be SSR
-- [ ] add SSR to more stuff that can be SSR
+- [ ] make cool robot page
+- [ ] add people to about page
+- [ ] add photos to photo gallery
+- [ ] SEO optimize
+- [ ] Add text and more stuff to about page
+- [ ] add cool animation to gallery hover over image
 - [ ] accesibility
+- [ ] add logo to main page

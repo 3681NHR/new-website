@@ -49,17 +49,17 @@ const StatItem: React.FC<StatItemProps> = ({
   return (
     <VStack
       p={6}
-      bg={'gray.muted'}
+      bg={'bg.emphasized'}
       rounded="xl"
       shadow="md"
       transition="all 0.3s"
       _hover={{ transform: 'translateY(-5px)', shadow: 'lg' }}
     >
-      <Icon as={icon} w={10} h={10} color="blue.solid" />
-      <Text fontSize="xl" fontWeight="bold">
+      <Icon as={icon} w={10} h={10} color="fg.info" />
+      <Text fontSize="xl" fontWeight="bold" color={'fg'}>
         {value}
       </Text>
-      <Text color={'gray.fg'}>{label}</Text>
+      <Text color={'fg.muted'}>{label}</Text>
     </VStack>
   );
 };
@@ -67,7 +67,7 @@ const StatItem: React.FC<StatItemProps> = ({
 export default function AboutPage() {
   return (
     //might change background color to {"bg"}
-    <Box bg={'#000000'} minH="100vh" py={20}>
+    <Box bg={'bg'} minH="100vh" py={20}>
       <Container maxW="container.xl">
         <VStack gap={12}>
           <Flex
@@ -77,7 +77,7 @@ export default function AboutPage() {
             gap={8}
           >
             <Box flex={1}>
-              <Text fontSize="xl" color={'gray.fg'}>
+              <Text fontSize="xl" color={'fg'}>
                 We are the FRC (First Robotics Competition) team of Nathan Hale
                 High School in Seattle WA, number 3681. We build a robot every
                 year for each year&apos;s game. We currently have around 25

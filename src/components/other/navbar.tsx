@@ -37,9 +37,7 @@ function NavbarItem(props: { href: string; title: string }) {
   const { href, title } = props;
   return (
     <ChakraLink
-      bgColor={'transparent'} //{"bg.muted"}
-      backdropFilter={'auto'}
-      backdropBlur={'20px'}
+      bgColor={'bg.emphasized'}
       paddingX={'3'}
       paddingY={'1.5'}
       rounded={'lg'}
@@ -48,7 +46,7 @@ function NavbarItem(props: { href: string; title: string }) {
       asChild
     >
       <Link href={href}>
-        <Text textStyle={'xl'} fontWeight={'semibold'}>
+        <Text textStyle={'xl'} fontWeight={'semibold'} color={'fg'}>
           {title}
         </Text>
       </Link>

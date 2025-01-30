@@ -20,9 +20,9 @@ export default function SponsorCard({
   const getTierColor = (tier: string) => {
     switch (tier) {
       case 'raider':
-        return 'red.700';
+        return 'red.500';
       case 'captain':
-        return 'yellow.400';
+        return 'yellow.500';
       default:
         return 'gray.200';
     }
@@ -62,7 +62,7 @@ export default function SponsorCard({
           my={4}
           fontSize="lg"
           fontWeight="semibold"
-          color="gray.emphasized"
+          color="fg.subtle"
           position="absolute"
           left={'50%'}
           transform="translateX(-50%)"
