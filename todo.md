@@ -10,5 +10,6 @@
 - [ ] Add text and more stuff to about page
 - [x] replace framer-motion with motion
 - [ ] add cool animation to gallery hover over image
-- [ ] add more SSR
+- [x] add SSR to most stuff that can be SSR
+- [ ] add SSR to more stuff that can be SSR
 - [ ] accesibility

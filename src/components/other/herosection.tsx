@@ -1,15 +1,17 @@
-'use client';
-
 import HeroImage from '@/components/other/heroImage';
 import { Box, Container, Flex, Heading, Text, VStack } from '@chakra-ui/react';
-import React from 'react';
 
-import { Button } from '@/components/ui/button';
+import JoinButton from '@/components/other/joinButton';
 
 export default function HeroSection() {
   return (
     <Box h="100vh" w="100%" position="relative">
-      <Container maxW="container.xl" h="100%" backgroundColor={'transparent'}>
+      <Container
+        maxW="full"
+        h="100%"
+        backgroundColor={'transparent'}
+        overflow={'visible'}
+      >
         <HeroImage />
         <Flex
           h="100%"
@@ -41,15 +43,7 @@ export default function HeroSection() {
             >
               Team 3681
             </Text>
-            <Button
-              variant={'ghost'}
-              size={'lg'}
-              onClick={() => {}}
-              _hover={{ transform: 'translateY(-2px)' }}
-              transition="all 0.2s"
-            >
-              Join us
-            </Button>
+            <JoinButton />
           </VStack>
         </Flex>
       </Container>

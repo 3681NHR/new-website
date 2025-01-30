@@ -1,4 +1,3 @@
-//todo: add motion
 'use client';
 
 import {
@@ -11,7 +10,25 @@ import {
   Icon,
   Flex,
 } from '@chakra-ui/react';
-import { FaRobot, FaTrophy, FaUsers, FaClock } from 'react-icons/fa';
+import dynamic from 'next/dynamic';
+
+const FaRobot = dynamic(
+  () => import('react-icons/fa').then(mod => mod.FaRobot),
+  { ssr: false }
+);
+const FaTrophy = dynamic(
+  () => import('react-icons/fa').then(mod => mod.FaTrophy),
+  { ssr: false }
+);
+const FaUsers = dynamic(
+  () => import('react-icons/fa').then(mod => mod.FaUsers),
+  { ssr: false }
+);
+const FaClock = dynamic(
+  () => import('react-icons/fa').then(mod => mod.FaClock),
+  { ssr: false }
+);
+
 //import MemberCard from './membercard';
 
 //import { MemberCard as Member } from './membercard';

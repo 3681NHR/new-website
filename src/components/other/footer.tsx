@@ -1,15 +1,13 @@
-'use client';
-
 import {
   Box,
   Center,
   Grid,
   GridItem,
   Text,
-  Button,
   ButtonGroup,
 } from '@chakra-ui/react';
 import { FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
+import FooterButton from '@/components/other/footerButton';
 
 export default function Footer() {
   return (
@@ -27,49 +25,35 @@ export default function Footer() {
         <GridItem>
           <Center h="full">
             <ButtonGroup size="md" variant="outline">
-              <Button
-                onClick={() =>
-                  window.open(
-                    'https://www.instagram.com/roboraiders3681',
-                    '_blank'
-                  )
-                }
-                aria-label="Instagram Link"
+              <FooterButton
+                url="https://www.instagram.com/roboraiders3681"
+                ariaLabel="Link to Instagram"
               >
                 <FaInstagram />
-              </Button>
-              <Button
-                onClick={() =>
-                  window.open('https://github.com/3681NHR', '_blank')
-                }
-                aria-label="Github Link"
+              </FooterButton>
+              <FooterButton
+                url="https://github.com/3681NHR"
+                ariaLabel="Link to Github"
               >
                 <FaGithub />
-              </Button>
-              <Button
-                onClick={() =>
-                  window.open('mailto:nhalerobotics@gmail.com', '_blank')
-                }
-                aria-label="Email to nhalerobotics@gmail.com"
+              </FooterButton>
+              <FooterButton
+                url="mailto:nhalerobotics@gmail.com"
+                ariaLabel="Mail to nhalerobotics@gmail.com"
               >
                 <FaEnvelope />
-              </Button>
-              <Button
-                onClick={() =>
-                  window.open(
-                    'https://www.thebluealliance.com/team/3681',
-                    '_blank'
-                  )
-                }
-                aria-label="Blue Alliance Link"
+              </FooterButton>
+              <FooterButton
+                url="https://www.thebluealliance.com/team/3681"
+                ariaLabel="Link to Blue Alliance"
               >
                 <img
                   width={'12rem'}
                   height={'12rem'}
                   alt="Blue Alliance Logo"
-                  src="/bluealliance.svg"
+                  src="/icons/bluealliance.svg"
                 ></img>
-              </Button>
+              </FooterButton>
             </ButtonGroup>
           </Center>
         </GridItem>
