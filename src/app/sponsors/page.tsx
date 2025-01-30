@@ -50,6 +50,7 @@ export default function SponsorsPage() {
             index={index}
           />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
           // <MotionBox
           //   key={index}
@@ -109,6 +110,8 @@ export default function SponsorsPage() {
           //   </Box>
           // </MotionBox>
 >>>>>>> ee5b73c (changed some stuff)
+=======
+>>>>>>> 3fcb1c0 (add light mode and fix some colors)
         ))}
       </Grid>
     </Container>

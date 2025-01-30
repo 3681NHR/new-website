@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import HeroImage from '@/components/other/heroImage';
 import { Box, Container } from '@chakra-ui/react';
 =======
@@ -17,6 +18,12 @@ import { Box, Container, Flex, Heading, Text, VStack } from '@chakra-ui/react';
 
 import JoinButton from '@/components/other/joinButton';
 >>>>>>> ee5b73c (changed some stuff)
+=======
+// import HeroImage from '@/components/other/heroImage';
+import { Box, Container } from '@chakra-ui/react';
+
+// import JoinButton from '@/components/other/joinButton';
+>>>>>>> 3fcb1c0 (add light mode and fix some colors)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -69,12 +76,17 @@ export default function HeroSection() {
       <Container
         maxW="full"
         h="100%"
-        backgroundColor={'transparent'}
+        backgroundColor={'bg'}
         overflow={'visible'}
       >
+<<<<<<< HEAD
         <HeroImage />
         <Flex
 >>>>>>> 498f866 (fix hero section bugs)
+=======
+        {/* <HeroImage /> */}
+        {/* <Flex
+>>>>>>> 3fcb1c0 (add light mode and fix some colors)
           h="100%"
           align="center"
           justify="center"

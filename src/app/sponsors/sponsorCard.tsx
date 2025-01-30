@@ -21,6 +21,7 @@ export default function SponsorCard({
     switch (tier) {
       case 'raider':
 <<<<<<< HEAD
+<<<<<<< HEAD
         return 'red.500';
       case 'captain':
         return 'yellow.500';
@@ -31,6 +32,11 @@ export default function SponsorCard({
       case 'captain':
         return 'yellow.400';
 >>>>>>> ee5b73c (changed some stuff)
+=======
+        return 'red.500';
+      case 'captain':
+        return 'yellow.500';
+>>>>>>> 3fcb1c0 (add light mode and fix some colors)
       default:
         return 'gray.200';
     }
@@ -80,10 +86,14 @@ export default function SponsorCard({
           fontSize="lg"
           fontWeight="semibold"
 <<<<<<< HEAD
+<<<<<<< HEAD
           color="fg.subtle"
 =======
           color="gray.emphasized"
 >>>>>>> ee5b73c (changed some stuff)
+=======
+          color="fg.subtle"
+>>>>>>> 3fcb1c0 (add light mode and fix some colors)
           position="absolute"
           left={'50%'}
           transform="translateX(-50%)"

@@ -88,6 +88,7 @@ export default function AboutPage() {
           >
             <Box flex={1}>
               <Text fontSize="xl" color={'fg'}>
+<<<<<<< HEAD
                 We are an after-school robotics club at Nathan Hale High School
 <<<<<<< HEAD
                 in Seattle, WA. Our team competes in the{' '}
@@ -124,7 +125,19 @@ export default function AboutPage() {
                 timed qualifying tournaments with other teams in the area,
                 working in alliances of three teams against three teams each
                 time, followed by a district playoff.
+<<<<<<< HEAD
 >>>>>>> 071bafd (update (#23))
+=======
+=======
+                We are the FRC (First Robotics Competition) team of Nathan Hale
+                High School in Seattle WA, number 3681. We build a robot every
+                year for each year&apos;s game. We currently have around 25
+                students and four adult mentors. We&apos;re one of the smaller
+                teams in the district with no dedicated teacher or classroom,
+                and our robot is designed, built, programmed and tested by
+                students.
+>>>>>>> 3fcb1c0 (add light mode and fix some colors)
+>>>>>>> 8cadf8c (add light mode and fix some colors)
               </Text>
             </Box>
             <Box flex={1}>

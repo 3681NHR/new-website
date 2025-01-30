@@ -126,6 +126,7 @@ function NavbarItem(
   const { href, title, hamburgerItem } = props;
 
   return (
+<<<<<<< HEAD
     <>
       {hamburgerItem ? (
         <Box
@@ -164,5 +165,22 @@ function NavbarItem(
         </ChakraLink>
       )}
     </>
+=======
+    <ChakraLink
+      bgColor={'bg.emphasized'}
+      paddingX={'3'}
+      paddingY={'1.5'}
+      rounded={'lg'}
+      outline={'none'}
+      shadow={'lg'}
+      asChild
+    >
+      <Link href={href}>
+        <Text textStyle={'xl'} fontWeight={'semibold'} color={'fg'}>
+          {title}
+        </Text>
+      </Link>
+    </ChakraLink>
+>>>>>>> 3fcb1c0 (add light mode and fix some colors)
   );
 }
