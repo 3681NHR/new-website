@@ -89,6 +89,9 @@ export default function AboutPage() {
             <Box flex={1}>
               <Text fontSize="xl" color={'fg'}>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b155062 (e)
                 We are an after-school robotics club at Nathan Hale High School
 <<<<<<< HEAD
                 in Seattle, WA. Our team competes in the{' '}
@@ -126,8 +129,11 @@ export default function AboutPage() {
                 working in alliances of three teams against three teams each
                 time, followed by a district playoff.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 071bafd (update (#23))
 =======
+=======
+>>>>>>> 17bf51d (e)
 =======
                 We are the FRC (First Robotics Competition) team of Nathan Hale
                 High School in Seattle WA, number 3681. We build a robot every
@@ -137,7 +143,12 @@ export default function AboutPage() {
                 and our robot is designed, built, programmed and tested by
                 students.
 >>>>>>> 3fcb1c0 (add light mode and fix some colors)
+<<<<<<< HEAD
 >>>>>>> 8cadf8c (add light mode and fix some colors)
+=======
+=======
+>>>>>>> b155062 (e)
+>>>>>>> 17bf51d (e)
               </Text>
             </Box>
             <Box flex={1}>

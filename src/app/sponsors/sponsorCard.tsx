@@ -77,7 +77,11 @@ export default function SponsorCard({
           mt={0}
 =======
           maxH={'100px'}
+<<<<<<< HEAD
 >>>>>>> ee5b73c (changed some stuff)
+=======
+          mt={0}
+>>>>>>> b155062 (e)
           mx="auto"
           objectFit="contain"
         />

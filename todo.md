@@ -26,4 +26,8 @@
 - [ ] add cool animation to gallery hover over image
 - [ ] accesibility
 - [ ] add logo to main page
+<<<<<<< HEAD
 >>>>>>> 3fcb1c0 (add light mode and fix some colors)
+=======
+- [ ] add mobile support
+>>>>>>> b155062 (e)
