@@ -78,13 +78,14 @@ export default function AboutPage() {
           >
             <Box flex={1}>
               <Text fontSize="xl" color={'fg'}>
-                We are the FRC (First Robotics Competition) team of Nathan Hale
-                High School in Seattle WA, number 3681. We build a robot every
-                year for each year&apos;s game. We currently have around 25
-                students and four adult mentors. We&apos;re one of the smaller
-                teams in the district with no dedicated teacher or classroom,
-                and our robot is designed, built, programmed and tested by
-                students.
+                We are an after-school robotics club at Nathan Hale High School
+                in Seattle, WA. Our team competes in the First Robotics
+                Competition (https://www.firstinspires.org/robotics/frc) as Team
+                3681, for which we build a robot each year to complete a task in
+                two district events. Each event consists of approximately 15
+                timed qualifying tournaments with other teams in the area,
+                working in alliances of three teams against three teams each
+                time, followed by a district playoff.
               </Text>
             </Box>
             <Box flex={1}>
@@ -116,37 +117,25 @@ export default function AboutPage() {
               ))}
             </Flex>
           </Box> */}
-          {/* <Box maxW={'70%'}>
+          <Box maxW={'70%'}>
             <Text fontSize="xl" color={'gray.fg'}>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Non
-              pellentesque et a ipsum sed imperdiet aenean sed malesuada.
-              Placerat tempus risus lobortis metus litora hac himenaeos nunc.
-              Orci vitae felis vitae sem natoque pulvinar donec maecenas. Neque
-              ullamcorper quisque posuere aliquet consectetur consequat
-              adipiscing. Netus vulputate vehicula eros pulvinar iaculis est.
-              Venenatis amet mus pellentesque ultrices suspendisse parturient
-              feugiat lacinia. <br /> Sodales condimentum quam parturient et
-              imperdiet pulvinar habitasse semper. Accumsan luctus integer non
-              porta ornare. Elit taciti varius proin gravida torquent. Ridiculus
-              cras suscipit per vestibulum adipiscing taciti massa orci. Fames
-              massa praesent nostra cubilia inceptos lobortis. Nam malesuada
-              duis ornare pretium, aenean rhoncus nec maximus. Ultrices faucibus
-              vel euismod; posuere nulla dictumst vitae. Iaculis et dolor semper
-              pulvinar mus laoreet praesent parturient lacus. Purus metus aptent
-              congue aliquet nostra. Massa tristique ultricies lacus ridiculus
-              ex duis. Maximus donec nec eu praesent hendrerit sit commodo
-              felis. Ipsum at eget; enim aptent nascetur netus. Diam faucibus
-              mus suspendisse nulla suspendisse. Nascetur ultricies laoreet
-              dictum vulputate conubia pulvinar. Consectetur varius placerat
-              egestas dui scelerisque vitae. Non torquent sit interdum sagittis
-              non augue mauris tempor. Leo ligula class ullamcorper ullamcorper
-              suscipit bibendum commodo suspendisse. Pellentesque montes
-              sollicitudin vivamus cursus fusce tempor. Ante malesuada montes
-              suspendisse auctor facilisis rhoncus; eu rutrum gravida. Sociosqu
-              aliquam senectus ut eleifend senectus himenaeos. Diam ligula
-              mattis libero, nisi nulla donec.
+              Approximately the top 50 teams in Western Washington move on to
+              the District Championships, and the top 50 teams from each
+              District Championship move on to Worlds. Each year, the
+              competition is completely different, and we don’t know the
+              objective until the first January of the year. However, we do know
+              basic items we will need like a drive system, approximate frame
+              size, registration fee, wiring, and programming. The build season
+              is incredibly short as district competitions start in March. We
+              meet as an after-school club in a common area in the hallway of
+              our high school and store our equipment in the mechanical room.
+              Starting in September, we meet three days a week but increase to
+              four days plus weekends during build season. We are one of the
+              smaller teams in the district without a dedicated classroom or
+              teacher and our robot is completely designed, tested, wired,
+              programmed, and built by us students.
             </Text>
-          </Box> */}
+          </Box>
         </VStack>
       </Container>
     </Box>

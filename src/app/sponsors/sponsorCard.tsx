@@ -55,6 +55,7 @@ export default function SponsorCard({
           src={logoUrl}
           alt={`${name} logo`}
           maxH={'100px'}
+          mt={0}
           mx="auto"
           objectFit="contain"
         />

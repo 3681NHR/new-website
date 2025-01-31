@@ -12,3 +12,4 @@
 - [ ] add cool animation to gallery hover over image
 - [ ] accesibility
 - [ ] add logo to main page
+- [ ] add mobile support
