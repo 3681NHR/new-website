@@ -27,6 +27,7 @@ export default function SponsorCard({
         return 'yellow.500';
       case 'major':
         return 'blue.500';
+<<<<<<< HEAD
 =======
         return 'red.700';
       case 'captain':
@@ -37,6 +38,8 @@ export default function SponsorCard({
       case 'captain':
         return 'yellow.500';
 >>>>>>> 3fcb1c0 (add light mode and fix some colors)
+=======
+>>>>>>> 93a6390 (added sponsors)
       default:
         return 'gray.200';
     }
@@ -54,9 +57,13 @@ export default function SponsorCard({
       cursor={'pointer'}
       height={'100%'}
 <<<<<<< HEAD
+<<<<<<< HEAD
       maxH={'10rem'}
 =======
 >>>>>>> ee5b73c (changed some stuff)
+=======
+      maxH={'10rem'}
+>>>>>>> 93a6390 (added sponsors)
     >
       <Box
         borderWidth="1px"
@@ -73,6 +80,9 @@ export default function SponsorCard({
           src={logoUrl}
           alt={`${name} logo`}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93a6390 (added sponsors)
           maxH={'75%'}
           mt={0}
 =======
