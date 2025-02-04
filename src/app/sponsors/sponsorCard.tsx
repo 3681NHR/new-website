@@ -23,6 +23,8 @@ export default function SponsorCard({
         return 'red.500';
       case 'captain':
         return 'yellow.500';
+      case 'major':
+        return 'blue.500';
       default:
         return 'gray.200';
     }
@@ -39,6 +41,7 @@ export default function SponsorCard({
       onClick={() => window.open(url, '_blank')}
       cursor={'pointer'}
       height={'100%'}
+      maxH={'10rem'}
     >
       <Box
         borderWidth="1px"
@@ -54,7 +57,7 @@ export default function SponsorCard({
         <Image
           src={logoUrl}
           alt={`${name} logo`}
-          maxH={'100px'}
+          maxH={'75%'}
           mt={0}
           mx="auto"
           objectFit="contain"

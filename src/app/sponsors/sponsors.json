@@ -7,22 +7,22 @@
       "url": "https://ospi.k12.wa.us/"
     },
     {
-      "name": "Seattle Public Schools CTE",
-      "logoUrl": "/sponsorlogos/SPSBrandmark_Color.png",
+      "name": "SPS CTE",
+      "logoUrl": "/sponsorlogos/SPSLogo_Color.png",
       "tier": "raider",
-      "url": "https://www.boeing.com/"
+      "url": "https://seattleschools.org/"
     },
     {
       "name": "NH Foundation",
-      "logoUrl": "/sponsorlogos/boeing.svg",
+      "logoUrl": "/sponsorlogos/NHHSFoundation.png",
       "tier": "raider",
-      "url": "https://www.boeing.com/"
+      "url": "https://www.nathanhalehsfoundation.org/"
     },
     {
       "name": "First Washington",
-      "logoUrl": "/sponsorlogos/boeing.svg",
+      "logoUrl": "/sponsorlogos/FirstWashington_logo.png",
       "tier": "raider",
-      "url": "https://www.boeing.com/"
+      "url": "https://firstwa.org/"
     },
     {
       "name": "Boeing",
@@ -32,15 +32,15 @@
     },
     {
       "name": "SPEEA",
-      "logoUrl": "/sponsorlogos/boeing.svg",
-      "tier": "raider",
-      "url": "https://www.boeing.com/"
+      "logoUrl": "/sponsorlogos/SPEEA_Logo.png",
+      "tier": "major",
+      "url": "https://www.speea.org/"
     },
     {
       "name": "First Inspires",
-      "logoUrl": "/sponsorlogos/boeing.svg",
-      "tier": "raider",
-      "url": "https://www.boeing.com/"
+      "logoUrl": "/sponsorlogos/first-horz-rgb.png",
+      "tier": "captain",
+      "url": "https://www.firstinspires.org/"
     }
   ]
 }

@@ -36,6 +36,7 @@ export default function SponsorsPage() {
           md: 'repeat(2, 1fr)',
           lg: 'repeat(3, 1fr)',
         }}
+        autoRows="1fr"
         gap={8}
       >
         {sponsorsData.sponsors.map((sponsor: Sponsor, index) => (
