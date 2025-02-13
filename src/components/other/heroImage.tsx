@@ -6,6 +6,7 @@ import Image from 'next/image';
 export default function HeroImage() {
   return (
     <ChakraImage asChild>
+<<<<<<< HEAD
       <Image
         src="/logo.svg"
         alt="Cover Image"
@@ -43,15 +44,15 @@ export default function HeroImage() {
 >>>>>>> 9415b64 (trying to fix hero section)
 =======
     <ChakraImage zIndex={0} asChild>
+=======
+>>>>>>> f777826 (hamburger and logo image)
       <Image
-        src="/teamphoto.webp"
+        src="/logo.svg"
         alt="Cover Image"
-        // width={3073}
-        // height={1415}
-        fill
-        className="bg-img"
+        width={1000}
+        height={1000}
+        //fill
         priority
-        //sizes="100vw"
       />
     </ChakraImage>
 >>>>>>> 498f866 (fix hero section bugs)

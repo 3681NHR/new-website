@@ -127,6 +127,9 @@ function NavbarItem(
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f777826 (hamburger and logo image)
     <>
       {hamburgerItem ? (
         <Box
@@ -165,6 +168,7 @@ function NavbarItem(
         </ChakraLink>
       )}
     </>
+<<<<<<< HEAD
 =======
     <ChakraLink
       bgColor={'bg.emphasized'}
@@ -182,5 +186,7 @@ function NavbarItem(
       </Link>
     </ChakraLink>
 >>>>>>> 3fcb1c0 (add light mode and fix some colors)
+=======
+>>>>>>> f777826 (hamburger and logo image)
   );
 }

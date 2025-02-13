@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import HeroImage from '@/components/other/heroImage';
 import { Box, Container } from '@chakra-ui/react';
 =======
@@ -20,6 +21,9 @@ import JoinButton from '@/components/other/joinButton';
 >>>>>>> ee5b73c (changed some stuff)
 =======
 // import HeroImage from '@/components/other/heroImage';
+=======
+import HeroImage from '@/components/other/heroImage';
+>>>>>>> f777826 (hamburger and logo image)
 import { Box, Container } from '@chakra-ui/react';
 
 // import JoinButton from '@/components/other/joinButton';
@@ -72,19 +76,30 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 =======
 export default function HeroSection() {
   return (
-    <Box h="100vh" w="100%" position="relative">
+    <Box
+      h="75vh"
+      w={{ base: 'full', lg: '50%', md: '75%', xl: '40%'}}
+      position="relative"
+      mx={'auto'}
+      mt={'6rem'}
+      overflow={'visible'}
+    >
       <Container
         maxW="full"
         h="100%"
-        backgroundColor={'bg'}
+        backgroundColor={'transparent'}
         overflow={'visible'}
       >
+<<<<<<< HEAD
 <<<<<<< HEAD
         <HeroImage />
         <Flex
 >>>>>>> 498f866 (fix hero section bugs)
 =======
         {/* <HeroImage /> */}
+=======
+        <HeroImage />
+>>>>>>> f777826 (hamburger and logo image)
         {/* <Flex
 >>>>>>> 3fcb1c0 (add light mode and fix some colors)
           h="100%"
