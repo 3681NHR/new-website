@@ -3,16 +3,14 @@ import Image from 'next/image';
 
 export default function HeroImage() {
   return (
-    <ChakraImage zIndex={0} asChild>
+    <ChakraImage asChild>
       <Image
-        src="/teamphoto.webp"
+        src="/logo.svg"
         alt="Cover Image"
-        // width={3073}
-        // height={1415}
-        fill
-        className="bg-img"
+        width={1000}
+        height={1000}
+        //fill
         priority
-        //sizes="100vw"
       />
     </ChakraImage>
   );

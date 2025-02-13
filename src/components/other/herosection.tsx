@@ -1,18 +1,25 @@
-// import HeroImage from '@/components/other/heroImage';
+import HeroImage from '@/components/other/heroImage';
 import { Box, Container } from '@chakra-ui/react';
 
 // import JoinButton from '@/components/other/joinButton';
 
 export default function HeroSection() {
   return (
-    <Box h="100vh" w="100%" position="relative">
+    <Box
+      h="75vh"
+      w={{ base: 'full', lg: '50%', md: '75%', xl: '40%'}}
+      position="relative"
+      mx={'auto'}
+      mt={'6rem'}
+      overflow={'visible'}
+    >
       <Container
         maxW="full"
         h="100%"
-        backgroundColor={'bg'}
+        backgroundColor={'transparent'}
         overflow={'visible'}
       >
-        {/* <HeroImage /> */}
+        <HeroImage />
         {/* <Flex
           h="100%"
           align="center"
