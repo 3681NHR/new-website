@@ -78,7 +78,7 @@ export default function HeroSection() {
   return (
     <Box
       h="75vh"
-      w={{ base: 'full', lg: '50%', md: '75%', xl: '40%'}}
+      w={{ base: 'full', lg: '50%', md: '75%', xl: '40%' }}
       position="relative"
       mx={'auto'}
       mt={'6rem'}

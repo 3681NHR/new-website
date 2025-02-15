@@ -43,8 +43,11 @@ const nextConfig: NextConfig = {
               script-src static.cloudflareinsights.com;
               connect-src cloudflareinsights.com;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 071bafd (update (#23))
 =======
+=======
+>>>>>>> c331b46 (lint)
 =======
 >>>>>>> ea43748 (add CSP)
 <<<<<<< HEAD
@@ -53,7 +56,12 @@ const nextConfig: NextConfig = {
 =======
               connect-src 'self' data:;
 >>>>>>> 1fdc1e3 (fix CSP)
+<<<<<<< HEAD
 >>>>>>> 1009d45 (fix CSP)
+=======
+=======
+>>>>>>> f475597 (lint)
+>>>>>>> c331b46 (lint)
             `
               .replace(/\s{2,}/g, ' ')
               .trim(),
