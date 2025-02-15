@@ -1,16 +1,46 @@
 {
   "sponsors": [
     {
+      "name": "OSPI",
+      "logoUrl": "/sponsorlogos/ospi.png",
+      "tier": "raider",
+      "url": "https://ospi.k12.wa.us/"
+    },
+    {
+      "name": "SPS CTE",
+      "logoUrl": "/sponsorlogos/SPSLogo_Color.png",
+      "tier": "raider",
+      "url": "https://seattleschools.org/"
+    },
+    {
+      "name": "NH Foundation",
+      "logoUrl": "/sponsorlogos/NHHSFoundation.png",
+      "tier": "raider",
+      "url": "https://www.nathanhalehsfoundation.org/"
+    },
+    {
+      "name": "First Washington",
+      "logoUrl": "/sponsorlogos/FirstWashington_logo.png",
+      "tier": "raider",
+      "url": "https://firstwa.org/"
+    },
+    {
       "name": "Boeing",
       "logoUrl": "/sponsorlogos/boeing.svg",
       "tier": "raider",
       "url": "https://www.boeing.com/"
     },
     {
-      "name": "OSPI",
-      "logoUrl": "/sponsorlogos/ospi.png",
+      "name": "SPEEA",
+      "logoUrl": "/sponsorlogos/SPEEA_Logo.png",
+      "tier": "major",
+      "url": "https://www.speea.org/"
+    },
+    {
+      "name": "First Inspires",
+      "logoUrl": "/sponsorlogos/first-horz-rgb.png",
       "tier": "captain",
-      "url": "https://ospi.k12.wa.us/"
+      "url": "https://www.firstinspires.org/"
     }
   ]
 }
