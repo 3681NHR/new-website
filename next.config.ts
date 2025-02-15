@@ -18,6 +18,8 @@ const nextConfig: NextConfig = {
               img-src 'self' data: https:;
               font-src 'self';
               connect-src 'self' data:;
+              script-src static.cloudflareinsights.com;
+              connect-src cloudflareinsights.com;
             `
               .replace(/\s{2,}/g, ' ')
               .trim(),
