@@ -8,6 +8,10 @@ import {
 } from '@chakra-ui/react';
 import { FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
 import FooterButton from '@/components/other/footerButton';
+<<<<<<< HEAD
+=======
+import { ColorModeButton } from '@/components/ui/color-mode';
+>>>>>>> 071bafd (update (#23))
 
 export default function Footer() {
   return (
@@ -89,6 +93,10 @@ export default function Footer() {
                   </g>
                 </svg>
               </FooterButton>
+<<<<<<< HEAD
+=======
+              <ColorModeButton />
+>>>>>>> 071bafd (update (#23))
             </ButtonGroup>
           </Center>
         </GridItem>

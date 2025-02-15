@@ -12,12 +12,16 @@ import {
   Link,
 } from '@chakra-ui/react';
 import dynamic from 'next/dynamic';
+<<<<<<< HEAD
 import {
   HoverCardArrow,
   HoverCardContent,
   HoverCardRoot,
   HoverCardTrigger,
 } from '@/components/ui/hover-card';
+=======
+
+>>>>>>> 071bafd (update (#23))
 const FaRobot = dynamic(
   () => import('react-icons/fa').then(mod => mod.FaRobot),
   { ssr: false }
@@ -85,6 +89,7 @@ export default function AboutPage() {
             <Box flex={1}>
               <Text fontSize="xl" color={'fg'}>
                 We are an after-school robotics club at Nathan Hale High School
+<<<<<<< HEAD
                 in Seattle, WA. Our team competes in the{' '}
                 <HoverCardRoot>
                   <HoverCardTrigger asChild>
@@ -111,6 +116,15 @@ export default function AboutPage() {
                 approximately 15 timed qualifying tournaments with other teams
                 in the area, working in alliances of three teams against three
                 teams each time, followed by a district playoff.
+=======
+                in Seattle, WA. Our team competes in the First Robotics
+                Competition (https://www.firstinspires.org/robotics/frc) as Team
+                3681, for which we build a robot each year to complete a task in
+                two district events. Each event consists of approximately 15
+                timed qualifying tournaments with other teams in the area,
+                working in alliances of three teams against three teams each
+                time, followed by a district playoff.
+>>>>>>> 071bafd (update (#23))
               </Text>
             </Box>
             <Box flex={1}>
