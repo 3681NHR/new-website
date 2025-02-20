@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               default-src 'self' 'wasm-unsafe-eval';
               script-src 'self' 'unsafe-inline' static.cloudflareinsights.com 'unsafe-eval';
               style-src 'self' 'unsafe-inline';
@@ -26,6 +27,8 @@ const nextConfig: NextConfig = {
 >>>>>>> 9c45d3b (add CSP)
 =======
 >>>>>>> 1009d45 (fix CSP)
+=======
+>>>>>>> 20ce648 (update)
               default-src 'self' wasm-unsafe-eval;
 =======
               default-src 'self';
@@ -61,7 +64,18 @@ const nextConfig: NextConfig = {
 =======
 =======
 >>>>>>> f475597 (lint)
+<<<<<<< HEAD
 >>>>>>> c331b46 (lint)
+=======
+=======
+              default-src 'self' 'wasm-unsafe-eval';
+              script-src 'self' 'unsafe-inline' static.cloudflareinsights.com 'unsafe-eval';
+              style-src 'self' 'unsafe-inline';
+              img-src 'self' data: https:;
+              font-src 'self';
+              connect-src 'self' data: cloudflareinsights.com;
+>>>>>>> 9e68c1c (update)
+>>>>>>> 20ce648 (update)
             `
               .replace(/\s{2,}/g, ' ')
               .trim(),

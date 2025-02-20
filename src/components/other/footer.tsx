@@ -11,6 +11,7 @@ import FooterButton from '@/components/other/footerButton';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { ColorModeButton } from '@/components/ui/color-mode';
 >>>>>>> 071bafd (update (#23))
@@ -20,13 +21,20 @@ import { ColorModeButton } from '@/components/ui/color-mode';
 >>>>>>> ee5b73c (changed some stuff)
 >>>>>>> 358d7d1 (changed some stuff)
 =======
+=======
+>>>>>>> 20ce648 (update)
 import { ColorModeButton } from '@/components/ui/color-mode';
 =======
 >>>>>>> ee5b73c (changed some stuff)
 =======
 import { ColorModeButton } from '@/components/ui/color-mode';
 >>>>>>> 3fcb1c0 (add light mode and fix some colors)
+<<<<<<< HEAD
 >>>>>>> 8cadf8c (add light mode and fix some colors)
+=======
+=======
+>>>>>>> 9e68c1c (update)
+>>>>>>> 20ce648 (update)
 
 export default function Footer() {
   return (
@@ -204,6 +212,7 @@ export default function Footer() {
                 </svg>
               </FooterButton>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ee5b73c (changed some stuff)
 <<<<<<< HEAD
 >>>>>>> 358d7d1 (changed some stuff)
@@ -211,7 +220,12 @@ export default function Footer() {
 =======
               <ColorModeButton />
 >>>>>>> 3fcb1c0 (add light mode and fix some colors)
+<<<<<<< HEAD
 >>>>>>> 8cadf8c (add light mode and fix some colors)
+=======
+=======
+>>>>>>> 9e68c1c (update)
+>>>>>>> 20ce648 (update)
             </ButtonGroup>
           </Center>
         </GridItem>

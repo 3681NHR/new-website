@@ -3,9 +3,13 @@
 import { usePathname } from 'next/navigation';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { ColorModeButton } from '@/components/ui/color-mode';
 =======
 >>>>>>> 071bafd (update (#23))
+=======
+import { ColorModeButton } from '@/components/ui/color-mode';
+>>>>>>> 20ce648 (update)
 import {
   Center,
   Link as ChakraLink,
@@ -88,10 +92,15 @@ export default function Navbar() {
                     <NavbarItem href="/robot" title="Robot" hamburgerItem />
                     <NavbarItem href="/gallery" title="Gallery" hamburgerItem />
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                     <ColorModeButton />
 =======
 >>>>>>> 071bafd (update (#23))
+=======
+
+                    <ColorModeButton />
+>>>>>>> 20ce648 (update)
                   </VStack>
                 </DrawerBody>
                 <DrawerCloseTrigger />
@@ -105,9 +114,13 @@ export default function Navbar() {
               <NavbarItem href="/robot" title="Robot" />
               <NavbarItem href="/gallery" title="Gallery" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <ColorModeButton />
 =======
 >>>>>>> 071bafd (update (#23))
+=======
+              <ColorModeButton />
+>>>>>>> 20ce648 (update)
             </HStack>
           )}
         </Center>

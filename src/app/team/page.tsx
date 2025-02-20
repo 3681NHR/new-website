@@ -13,15 +13,21 @@ import {
 } from '@chakra-ui/react';
 import dynamic from 'next/dynamic';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 20ce648 (update)
 import {
   HoverCardArrow,
   HoverCardContent,
   HoverCardRoot,
   HoverCardTrigger,
 } from '@/components/ui/hover-card';
+<<<<<<< HEAD
 =======
 
 >>>>>>> 071bafd (update (#23))
+=======
+>>>>>>> 20ce648 (update)
 const FaRobot = dynamic(
   () => import('react-icons/fa').then(mod => mod.FaRobot),
   { ssr: false }
@@ -94,6 +100,7 @@ export default function AboutPage() {
 >>>>>>> b155062 (e)
                 We are an after-school robotics club at Nathan Hale High School
 <<<<<<< HEAD
+<<<<<<< HEAD
                 in Seattle, WA. Our team competes in the{' '}
                 <HoverCardRoot>
                   <HoverCardTrigger asChild>
@@ -121,6 +128,8 @@ export default function AboutPage() {
                 in the area, working in alliances of three teams against three
                 teams each time, followed by a district playoff.
 =======
+=======
+>>>>>>> 20ce648 (update)
                 in Seattle, WA. Our team competes in the First Robotics
                 Competition (https://www.firstinspires.org/robotics/frc) as Team
                 3681, for which we build a robot each year to complete a task in
@@ -148,7 +157,38 @@ export default function AboutPage() {
 =======
 =======
 >>>>>>> b155062 (e)
+<<<<<<< HEAD
 >>>>>>> 17bf51d (e)
+=======
+=======
+                in Seattle, WA. Our team competes in the{' '}
+                <HoverCardRoot>
+                  <HoverCardTrigger asChild>
+                    <Link
+                      href="https://www.firstinspires.org/robotics/frc"
+                      variant="underline"
+                      colorPalette="red"
+                    >
+                      First Robotics Competition
+                    </Link>
+                  </HoverCardTrigger>
+                  <HoverCardContent>
+                    <Text>
+                      The FIRST Robotics Competition is an international high
+                      school robotics competition that gives students real-world
+                      engineering experience. Teams are given a standard set of
+                      parts and a common task to complete in six weeks.
+                    </Text>
+                    <HoverCardArrow />
+                  </HoverCardContent>
+                </HoverCardRoot>{' '}
+                as Team 3681, for which we build a robot each year to complete a
+                task in two district events. Each event consists of
+                approximately 15 timed qualifying tournaments with other teams
+                in the area, working in alliances of three teams against three
+                teams each time, followed by a district playoff.
+>>>>>>> 9e68c1c (update)
+>>>>>>> 20ce648 (update)
               </Text>
             </Box>
             <Box flex={1}>
