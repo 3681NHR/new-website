@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 
+import { ColorModeButton } from '@/components/ui/color-mode';
 import {
   Center,
   Link as ChakraLink,
@@ -83,6 +84,8 @@ export default function Navbar() {
                     />
                     <NavbarItem href="/robot" title="Robot" hamburgerItem />
                     <NavbarItem href="/gallery" title="Gallery" hamburgerItem />
+
+                    <ColorModeButton />
                   </VStack>
                 </DrawerBody>
                 <DrawerCloseTrigger />
@@ -95,6 +98,7 @@ export default function Navbar() {
               <NavbarItem href="/sponsors" title="Sponsors" />
               <NavbarItem href="/robot" title="Robot" />
               <NavbarItem href="/gallery" title="Gallery" />
+              <ColorModeButton />
             </HStack>
           )}
         </Center>

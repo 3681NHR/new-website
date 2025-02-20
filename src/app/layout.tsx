@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/other/footer';
-import { TurnstileContext } from 'turnstile-next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -59,14 +58,13 @@ export const metadata: Metadata = {
 export default function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props;
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="en" className={inter.className}>
       <body>
         <Provider>
           <Navbar />
           {children}
           <Footer />
         </Provider>
-        <TurnstileContext />
       </body>
     </html>
   );

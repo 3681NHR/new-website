@@ -9,9 +9,15 @@ import {
   Image,
   Icon,
   Flex,
+  Link,
 } from '@chakra-ui/react';
 import dynamic from 'next/dynamic';
-
+import {
+  HoverCardArrow,
+  HoverCardContent,
+  HoverCardRoot,
+  HoverCardTrigger,
+} from '@/components/ui/hover-card';
 const FaRobot = dynamic(
   () => import('react-icons/fa').then(mod => mod.FaRobot),
   { ssr: false }
@@ -79,13 +85,32 @@ export default function AboutPage() {
             <Box flex={1}>
               <Text fontSize="xl" color={'fg'}>
                 We are an after-school robotics club at Nathan Hale High School
-                in Seattle, WA. Our team competes in the First Robotics
-                Competition (https://www.firstinspires.org/robotics/frc) as Team
-                3681, for which we build a robot each year to complete a task in
-                two district events. Each event consists of approximately 15
-                timed qualifying tournaments with other teams in the area,
-                working in alliances of three teams against three teams each
-                time, followed by a district playoff.
+                in Seattle, WA. Our team competes in the{' '}
+                <HoverCardRoot>
+                  <HoverCardTrigger asChild>
+                    <Link
+                      href="https://www.firstinspires.org/robotics/frc"
+                      variant="underline"
+                      colorPalette="red"
+                    >
+                      First Robotics Competition
+                    </Link>
+                  </HoverCardTrigger>
+                  <HoverCardContent>
+                    <Text>
+                      The FIRST Robotics Competition is an international high
+                      school robotics competition that gives students real-world
+                      engineering experience. Teams are given a standard set of
+                      parts and a common task to complete in six weeks.
+                    </Text>
+                    <HoverCardArrow />
+                  </HoverCardContent>
+                </HoverCardRoot>{' '}
+                as Team 3681, for which we build a robot each year to complete a
+                task in two district events. Each event consists of
+                approximately 15 timed qualifying tournaments with other teams
+                in the area, working in alliances of three teams against three
+                teams each time, followed by a district playoff.
               </Text>
             </Box>
             <Box flex={1}>

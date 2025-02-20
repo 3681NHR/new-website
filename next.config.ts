@@ -12,14 +12,12 @@ const nextConfig: NextConfig = {
           {
             key: 'Content-Security-Policy',
             value: `
-              default-src 'self' wasm-unsafe-eval;
-              script-src 'self' 'unsafe-inline';
+              default-src 'self' 'wasm-unsafe-eval';
+              script-src 'self' 'unsafe-inline' static.cloudflareinsights.com 'unsafe-eval';
               style-src 'self' 'unsafe-inline';
               img-src 'self' data: https:;
               font-src 'self';
-              connect-src 'self' data:;
-              script-src static.cloudflareinsights.com;
-              connect-src cloudflareinsights.com;
+              connect-src 'self' data: cloudflareinsights.com;
             `
               .replace(/\s{2,}/g, ' ')
               .trim(),
