@@ -6,6 +6,7 @@ import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import nodePlugin from 'eslint-plugin-n';
 import globals from 'globals';
+import next from '@next/eslint-plugin-next';
 
 export default tseslint.config(
   {
@@ -35,11 +36,13 @@ export default tseslint.config(
         ...globals.jest,
       },
     },
-    plugins: { react, 'react-hooks': reactHooks },
+    plugins: { react, 'react-hooks': reactHooks, '@next/next': next },
     settings: {
       react: { version: 'detect' },
     },
     rules: {
+      ...next.configs.recommended.rules,
+      ...next.configs['core-web-vitals'].rules,
       'react/no-unknown-property': 'off',
       'react/react-in-jsx-scope': 0,
       ...reactHooks.configs.recommended.rules,
