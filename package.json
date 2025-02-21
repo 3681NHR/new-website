@@ -12,7 +12,7 @@
     "lint-code:fix": "bun run lint-code -- --fix",
     "lint-styles": "stylelint --ignore-path .gitignore '**/*.{css,scss,sass}'",
     "lint-styles:fix": "bun run lint-styles -- --fix",
-    "commit": "bun run lint:fix && git add . && git commit"
+    "commit": "bun run lint:fix && git add . && WHYAMILIKETHIS=1 git commit"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.8.1",
