@@ -1,5 +1,8 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 031e7ba (bun)
   "cSpell.words": [
     "chakra",
     "cloudflareinsights",
@@ -15,6 +18,7 @@
     "websiterewrite"
 ]
 }
+<<<<<<< HEAD
 =======
     "cSpell.words": [
         "chakra",
@@ -28,3 +32,5 @@
     ]
 }
 >>>>>>> 071bafd (update (#23))
+=======
+>>>>>>> 031e7ba (bun)
