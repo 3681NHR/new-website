@@ -12,15 +12,7 @@
     "lint-code:fix": "bun run lint-code -- --fix",
     "lint-styles": "stylelint --ignore-path .gitignore '**/*.{css,scss,sass}'",
     "lint-styles:fix": "bun run lint-styles -- --fix",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "commit": "bun run lint:fix && git add . && WHYAMILIKETHIS=1 git commit"
-=======
-    "commit": "bun run lint:fix && git add . && git commit -m "
->>>>>>> 20ce648 (update)
-=======
-    "commit": "bun run lint:fix && git add . && git commit"
->>>>>>> 031e7ba (bun)
   },
   "dependencies": {
     "@chakra-ui/react": "^3.8.1",
@@ -43,14 +35,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "9.20.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "@next/eslint-plugin-next": "^15.1.7",
-=======
->>>>>>> 20ce648 (update)
-=======
-    "@next/eslint-plugin-next": "^15.1.7",
->>>>>>> 031e7ba (bun)
     "@types/eslint__js": "8.42.3",
     "@types/markdown-it": "^14.1.2",
     "@types/react": "^19.0.10",

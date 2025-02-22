@@ -2,14 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { ColorModeButton } from '@/components/ui/color-mode';
-=======
->>>>>>> 071bafd (update (#23))
-=======
-import { ColorModeButton } from '@/components/ui/color-mode';
->>>>>>> 20ce648 (update)
 import {
   Center,
   Link as ChakraLink,
@@ -91,16 +84,8 @@ export default function Navbar() {
                     />
                     <NavbarItem href="/robot" title="Robot" hamburgerItem />
                     <NavbarItem href="/gallery" title="Gallery" hamburgerItem />
-<<<<<<< HEAD
-<<<<<<< HEAD
 
                     <ColorModeButton />
-=======
->>>>>>> 071bafd (update (#23))
-=======
-
-                    <ColorModeButton />
->>>>>>> 20ce648 (update)
                   </VStack>
                 </DrawerBody>
                 <DrawerCloseTrigger />
@@ -113,14 +98,7 @@ export default function Navbar() {
               <NavbarItem href="/sponsors" title="Sponsors" />
               <NavbarItem href="/robot" title="Robot" />
               <NavbarItem href="/gallery" title="Gallery" />
-<<<<<<< HEAD
-<<<<<<< HEAD
               <ColorModeButton />
-=======
->>>>>>> 071bafd (update (#23))
-=======
-              <ColorModeButton />
->>>>>>> 20ce648 (update)
             </HStack>
           )}
         </Center>
@@ -139,10 +117,6 @@ function NavbarItem(
   const { href, title, hamburgerItem } = props;
 
   return (
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f777826 (hamburger and logo image)
     <>
       {hamburgerItem ? (
         <Box
@@ -181,25 +155,5 @@ function NavbarItem(
         </ChakraLink>
       )}
     </>
-<<<<<<< HEAD
-=======
-    <ChakraLink
-      bgColor={'bg.emphasized'}
-      paddingX={'3'}
-      paddingY={'1.5'}
-      rounded={'lg'}
-      outline={'none'}
-      shadow={'lg'}
-      asChild
-    >
-      <Link href={href}>
-        <Text textStyle={'xl'} fontWeight={'semibold'} color={'fg'}>
-          {title}
-        </Text>
-      </Link>
-    </ChakraLink>
->>>>>>> 3fcb1c0 (add light mode and fix some colors)
-=======
->>>>>>> f777826 (hamburger and logo image)
   );
 }

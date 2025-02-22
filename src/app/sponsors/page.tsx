@@ -1,15 +1,15 @@
 import { Container, Grid, Heading, Text, VStack } from '@chakra-ui/react';
-import sponsorsData from './sponsors.json';
-
+const sponsorsData = (await import('./sponsors.json')) as {
+  sponsors: Array<Sponsor>;
+};
 import SponsorCard from './sponsorCard';
-
+type sponsorTier = 'raider' | 'captain' | 'major';
 export interface Sponsor {
   name: string;
   logoUrl: string;
-  tier: string; //"raider" | "captain" | "add more"
+  tier: sponsorTier; //"raider" | "captain" | "add more"
   url: string;
 }
-
 export default function SponsorsPage() {
   return (
     <Container maxW="container.xl" py={10} bg={'bg'}>
@@ -49,9 +49,6 @@ export default function SponsorsPage() {
             {...sponsor}
             index={index}
           />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
           // <MotionBox
           //   key={index}
           //   whileHover={{ scale: 1.05 }}
@@ -109,9 +106,6 @@ export default function SponsorsPage() {
           //     </Badge>
           //   </Box>
           // </MotionBox>
->>>>>>> ee5b73c (changed some stuff)
-=======
->>>>>>> 3fcb1c0 (add light mode and fix some colors)
         ))}
       </Grid>
     </Container>

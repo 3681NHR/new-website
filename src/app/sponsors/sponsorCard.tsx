@@ -20,26 +20,11 @@ export default function SponsorCard({
   const getTierColor = (tier: string) => {
     switch (tier) {
       case 'raider':
-<<<<<<< HEAD
-<<<<<<< HEAD
         return 'red.500';
       case 'captain':
         return 'yellow.500';
       case 'major':
         return 'blue.500';
-<<<<<<< HEAD
-=======
-        return 'red.700';
-      case 'captain':
-        return 'yellow.400';
->>>>>>> ee5b73c (changed some stuff)
-=======
-        return 'red.500';
-      case 'captain':
-        return 'yellow.500';
->>>>>>> 3fcb1c0 (add light mode and fix some colors)
-=======
->>>>>>> 93a6390 (added sponsors)
       default:
         return 'gray.200';
     }
@@ -56,14 +41,7 @@ export default function SponsorCard({
       onClick={() => window.open(url, '_blank')}
       cursor={'pointer'}
       height={'100%'}
-<<<<<<< HEAD
-<<<<<<< HEAD
       maxH={'10rem'}
-=======
->>>>>>> ee5b73c (changed some stuff)
-=======
-      maxH={'10rem'}
->>>>>>> 93a6390 (added sponsors)
     >
       <Box
         borderWidth="1px"
@@ -79,19 +57,8 @@ export default function SponsorCard({
         <Image
           src={logoUrl}
           alt={`${name} logo`}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 93a6390 (added sponsors)
           maxH={'75%'}
           mt={0}
-=======
-          maxH={'100px'}
-<<<<<<< HEAD
->>>>>>> ee5b73c (changed some stuff)
-=======
-          mt={0}
->>>>>>> b155062 (e)
           mx="auto"
           objectFit="contain"
         />
@@ -99,15 +66,7 @@ export default function SponsorCard({
           my={4}
           fontSize="lg"
           fontWeight="semibold"
-<<<<<<< HEAD
-<<<<<<< HEAD
           color="fg.subtle"
-=======
-          color="gray.emphasized"
->>>>>>> ee5b73c (changed some stuff)
-=======
-          color="fg.subtle"
->>>>>>> 3fcb1c0 (add light mode and fix some colors)
           position="absolute"
           left={'50%'}
           transform="translateX(-50%)"

@@ -12,22 +12,12 @@ import {
   Link,
 } from '@chakra-ui/react';
 import dynamic from 'next/dynamic';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 20ce648 (update)
 import {
   HoverCardArrow,
   HoverCardContent,
   HoverCardRoot,
   HoverCardTrigger,
 } from '@/components/ui/hover-card';
-<<<<<<< HEAD
-=======
-
->>>>>>> 071bafd (update (#23))
-=======
->>>>>>> 20ce648 (update)
 const FaRobot = dynamic(
   () => import('react-icons/fa').then(mod => mod.FaRobot),
   { ssr: false }
@@ -94,13 +84,7 @@ export default function AboutPage() {
           >
             <Box flex={1}>
               <Text fontSize="xl" color={'fg'}>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b155062 (e)
                 We are an after-school robotics club at Nathan Hale High School
-<<<<<<< HEAD
-<<<<<<< HEAD
                 in Seattle, WA. Our team competes in the{' '}
                 <HoverCardRoot>
                   <HoverCardTrigger asChild>
@@ -127,68 +111,6 @@ export default function AboutPage() {
                 approximately 15 timed qualifying tournaments with other teams
                 in the area, working in alliances of three teams against three
                 teams each time, followed by a district playoff.
-=======
-=======
->>>>>>> 20ce648 (update)
-                in Seattle, WA. Our team competes in the First Robotics
-                Competition (https://www.firstinspires.org/robotics/frc) as Team
-                3681, for which we build a robot each year to complete a task in
-                two district events. Each event consists of approximately 15
-                timed qualifying tournaments with other teams in the area,
-                working in alliances of three teams against three teams each
-                time, followed by a district playoff.
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 071bafd (update (#23))
-=======
-=======
->>>>>>> 17bf51d (e)
-=======
-                We are the FRC (First Robotics Competition) team of Nathan Hale
-                High School in Seattle WA, number 3681. We build a robot every
-                year for each year&apos;s game. We currently have around 25
-                students and four adult mentors. We&apos;re one of the smaller
-                teams in the district with no dedicated teacher or classroom,
-                and our robot is designed, built, programmed and tested by
-                students.
->>>>>>> 3fcb1c0 (add light mode and fix some colors)
-<<<<<<< HEAD
->>>>>>> 8cadf8c (add light mode and fix some colors)
-=======
-=======
->>>>>>> b155062 (e)
-<<<<<<< HEAD
->>>>>>> 17bf51d (e)
-=======
-=======
-                in Seattle, WA. Our team competes in the{' '}
-                <HoverCardRoot>
-                  <HoverCardTrigger asChild>
-                    <Link
-                      href="https://www.firstinspires.org/robotics/frc"
-                      variant="underline"
-                      colorPalette="red"
-                    >
-                      First Robotics Competition
-                    </Link>
-                  </HoverCardTrigger>
-                  <HoverCardContent>
-                    <Text>
-                      The FIRST Robotics Competition is an international high
-                      school robotics competition that gives students real-world
-                      engineering experience. Teams are given a standard set of
-                      parts and a common task to complete in six weeks.
-                    </Text>
-                    <HoverCardArrow />
-                  </HoverCardContent>
-                </HoverCardRoot>{' '}
-                as Team 3681, for which we build a robot each year to complete a
-                task in two district events. Each event consists of
-                approximately 15 timed qualifying tournaments with other teams
-                in the area, working in alliances of three teams against three
-                teams each time, followed by a district playoff.
->>>>>>> 9e68c1c (update)
->>>>>>> 20ce648 (update)
               </Text>
             </Box>
             <Box flex={1}>
