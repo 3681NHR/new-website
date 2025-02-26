@@ -19,6 +19,7 @@ export default function Footer() {
             <Text color={'fg'}>
               © 2025 RoboRaiders 3681
               <br />
+               I wrote this line of code with furry paws on. Just thought I would mention that. 
               {/* Logo courtesy of Sebastian Mulligan */}
             </Text>
           </Center>
