@@ -30,6 +30,7 @@
     "react-icons": "^5.5.0",
     "sharp": "^0.33.5",
     "three": "^0.173.0",
+    "turnstile-next": "^0.2.2",
     "websiterewrite": "file:"
   },
   "devDependencies": {
