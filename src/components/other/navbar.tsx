@@ -18,7 +18,6 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 import {
-  DrawerBackdrop,
   DrawerBody,
   DrawerCloseTrigger,
   DrawerContent,
@@ -66,12 +65,14 @@ export default function Navbar() {
               placement={'bottom'}
               size={'full'}
             >
-              <DrawerBackdrop />
-              <DrawerTrigger asChild>
-                <Button variant="outline" size="lg">
-                  <FaHamburger />
-                </Button>
-              </DrawerTrigger>
+              {/* i wrote this conditional rendering with furry paws on just thought you should know :) */}
+              {!isHamburgerMenuOpen && (
+                <DrawerTrigger asChild>
+                  <Button variant="outline" size="lg">
+                    <FaHamburger />
+                  </Button>
+                </DrawerTrigger>
+              )}
               <DrawerContent>
                 <DrawerBody>
                   <VStack gap={'4'} mt={'20'}>

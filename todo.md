@@ -13,4 +13,4 @@
 - [x] Add text and more stuff to about page
 - [ ] add cool animation to gallery hover over image
 - [x] add logo to main page
-- [ ] add mobile support
+- [x] add mobile support
