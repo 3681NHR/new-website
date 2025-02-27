@@ -83,7 +83,7 @@ export default function Navbar() {
                       title="Sponsors"
                       hamburgerItem
                     />
-                    <NavbarItem href="/robot" title="Robot" hamburgerItem />
+                    {/* <NavbarItem href="/robot" title="Robot" hamburgerItem /> */}
                     <NavbarItem href="/gallery" title="Gallery" hamburgerItem />
 
                     <ColorModeButton />
@@ -97,7 +97,7 @@ export default function Navbar() {
               <NavbarItem href="/" title="Home" hamburgerItem={false} />
               <NavbarItem href="/team" title="Our Team" />
               <NavbarItem href="/sponsors" title="Sponsors" />
-              <NavbarItem href="/robot" title="Robot" />
+              {/* <NavbarItem href="/robot" title="Robot" /> */}
               <NavbarItem href="/gallery" title="Gallery" />
               <ColorModeButton />
             </HStack>

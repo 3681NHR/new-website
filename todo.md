@@ -6,7 +6,6 @@
 - [ ] add cool animation to gallery hover over image
 - [x] add SSR to most stuff that can be SSR
 - [ ] accessibility
-- [ ] make cool robot page
 - [ ] add people to about page
 - [ ] add photos to photo gallery
 - [x] SEO optimize
