@@ -18,6 +18,7 @@ import {
   HoverCardRoot,
   HoverCardTrigger,
 } from '@/components/ui/hover-card';
+
 const FaRobot = dynamic(
   () => import('react-icons/fa').then(mod => mod.FaRobot),
   { ssr: false }

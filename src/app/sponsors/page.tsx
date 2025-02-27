@@ -1,15 +1,19 @@
 import { Container, Grid, Heading, Text, VStack } from '@chakra-ui/react';
+
 const sponsorsData = (await import('./sponsors.json')) as {
   sponsors: Array<Sponsor>;
 };
 import SponsorCard from './sponsorCard';
+
 type sponsorTier = 'raider' | 'captain' | 'major';
+
 export interface Sponsor {
   name: string;
   logoUrl: string;
   tier: sponsorTier; //"raider" | "captain" | "add more"
   url: string;
 }
+
 export default function SponsorsPage() {
   return (
     <Container maxW="container.xl" py={10} bg={'bg'}>
