@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 
+import { ColorModeButton } from '@/components/ui/color-mode';
 import {
   Center,
   Link as ChakraLink,
@@ -17,7 +18,6 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 import {
-  DrawerBackdrop,
   DrawerBody,
   DrawerCloseTrigger,
   DrawerContent,
@@ -65,12 +65,14 @@ export default function Navbar() {
               placement={'bottom'}
               size={'full'}
             >
-              <DrawerBackdrop />
-              <DrawerTrigger asChild>
-                <Button variant="outline" size="lg">
-                  <FaHamburger />
-                </Button>
-              </DrawerTrigger>
+              {/* i wrote this conditional rendering with furry paws on just thought you should know :) */}
+              {!isHamburgerMenuOpen && (
+                <DrawerTrigger asChild>
+                  <Button variant="outline" size="lg">
+                    <FaHamburger />
+                  </Button>
+                </DrawerTrigger>
+              )}
               <DrawerContent>
                 <DrawerBody>
                   <VStack gap={'4'} mt={'20'}>
@@ -81,8 +83,10 @@ export default function Navbar() {
                       title="Sponsors"
                       hamburgerItem
                     />
-                    <NavbarItem href="/robot" title="Robot" hamburgerItem />
+                    {/* <NavbarItem href="/robot" title="Robot" hamburgerItem /> */}
                     <NavbarItem href="/gallery" title="Gallery" hamburgerItem />
+
+                    <ColorModeButton />
                   </VStack>
                 </DrawerBody>
                 <DrawerCloseTrigger />
@@ -93,8 +97,9 @@ export default function Navbar() {
               <NavbarItem href="/" title="Home" hamburgerItem={false} />
               <NavbarItem href="/team" title="Our Team" />
               <NavbarItem href="/sponsors" title="Sponsors" />
-              <NavbarItem href="/robot" title="Robot" />
+              {/* <NavbarItem href="/robot" title="Robot" /> */}
               <NavbarItem href="/gallery" title="Gallery" />
+              <ColorModeButton />
             </HStack>
           )}
         </Center>

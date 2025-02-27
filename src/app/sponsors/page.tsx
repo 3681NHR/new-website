@@ -1,12 +1,16 @@
 import { Container, Grid, Heading, Text, VStack } from '@chakra-ui/react';
-import sponsorsData from './sponsors.json';
 
+const sponsorsData = (await import('./sponsors.json')) as {
+  sponsors: Array<Sponsor>;
+};
 import SponsorCard from './sponsorCard';
+
+type sponsorTier = 'raider' | 'captain' | 'major';
 
 export interface Sponsor {
   name: string;
   logoUrl: string;
-  tier: string; //"raider" | "captain" | "add more"
+  tier: sponsorTier; //"raider" | "captain" | "add more"
   url: string;
 }
 
@@ -49,6 +53,63 @@ export default function SponsorsPage() {
             {...sponsor}
             index={index}
           />
+          // <MotionBox
+          //   key={index}
+          //   whileHover={{ scale: 1.05 }}
+          //   whileTap={{ scale: 0.95 }}
+          //   initial={{ opacity: 0, y: 20 }}
+          //   animate={{ opacity: 1, y: 0 }}
+          //   transition={{ duration: 0.3, delay: index * 0.1 }}
+          //   onClick={() => window.open(sponsor.url, '_blank')}
+          //   cursor={'pointer'}
+          //   height={'100%'}
+          // >
+          //   <Box
+          //     borderWidth="1px"
+          //     borderRadius="lg"
+          //     borderColor={getTierColor(sponsor.tier)}
+          //     overflow="hidden"
+          //     p={6}
+          //     textAlign="center"
+          //     bg="bg.subtle"
+          //     position="relative"
+          //     height="100%"
+          //   >
+          //     <Image
+          //       src={sponsor.logoUrl}
+          //       alt={`${sponsor.name} logo`}
+          //       maxH={'100px'}
+          //       mx="auto"
+          //       objectFit="contain"
+          //     />
+          //     <Text
+          //       my={4}
+          //       fontSize="lg"
+          //       fontWeight="semibold"
+          //       color="gray.emphasized"
+          //       position="absolute"
+          //       left={'50%'}
+          //       transform="translateX(-50%)"
+          //       bottom={0}
+          //     >
+          //       {sponsor.name}
+          //     </Text>
+          //     <Badge
+          //       position="absolute"
+          //       top={2}
+          //       right={2}
+          //       px={2}
+          //       py={1}
+          //       borderRadius="md"
+          //       bg={getTierColor(sponsor.tier)}
+          //       color="white"
+          //       fontSize="sm"
+          //       textTransform="capitalize"
+          //     >
+          //       {sponsor.tier}
+          //     </Badge>
+          //   </Box>
+          // </MotionBox>
         ))}
       </Grid>
     </Container>
