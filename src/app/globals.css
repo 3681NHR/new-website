@@ -16,3 +16,7 @@ html {
   background: var(--background); */
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.pixelated {
+  image-rendering: pixelated !important;
+}
