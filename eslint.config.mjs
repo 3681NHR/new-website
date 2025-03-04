@@ -36,7 +36,11 @@ export default tseslint.config(
         ...globals.jest,
       },
     },
-    plugins: { react, 'react-hooks': reactHooks, '@next/next': next },
+    plugins: {
+      react,
+      'react-hooks': reactHooks,
+      '@next/next': next,
+    },
     settings: {
       react: { version: 'detect' },
     },
@@ -53,9 +57,9 @@ export default tseslint.config(
         },
       ],
       'n/no-unsupported-features/node-builtins': [
-        'error',
+        'warn',
         {
-          ignores: ['localStorage'],
+          ignores: ['localStorage', 'navigator.userAgent', 'navigator'],
         },
       ],
     },

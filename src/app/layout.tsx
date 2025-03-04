@@ -63,7 +63,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
       <head>
         <meta name="apple-mobile-web-app-title" content="RoboRaiders 3681" />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <Provider>
           <Navbar />
           {children}

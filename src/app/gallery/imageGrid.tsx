@@ -6,7 +6,12 @@ import { Grid } from '@chakra-ui/react';
 export default function ImageGrid() {
   return (
     <Grid
-      templateColumns="repeat(4, 1fr)"
+      templateColumns={{
+        xl: 'repeat(4, 1fr)',
+        base: '1fr',
+        sm: 'repeat(2, 1fr)',
+        md: 'repeat(3, 1fr)',
+      }}
       gap="6"
       //autoRows="auto"
       //autoFlow="dense"
