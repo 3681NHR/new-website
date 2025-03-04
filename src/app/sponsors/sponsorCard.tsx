@@ -25,6 +25,8 @@ export default function SponsorCard({
         return 'yellow.500';
       case 'major':
         return 'blue.500';
+      case 'lieutenant':
+        return 'green.500';
       default:
         return 'gray.200';
     }
@@ -33,11 +35,14 @@ export default function SponsorCard({
   return (
     <MotionBox
       //key={index}
-      whileHover={{ scale: 1.05 }}
+      whileHover={{
+        scale: 1.05,
+        transition: { duration: 0.2 },
+      }}
       whileTap={{ scale: 0.95 }}
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: 0.1 * index }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 0.1 * index } }}
+      transition={{ duration: 0.3 }}
       onClick={() => window.open(url, '_blank')}
       cursor={'pointer'}
       height={'100%'}
@@ -54,14 +59,17 @@ export default function SponsorCard({
         position="relative"
         height="100%"
       >
-        <Image
-          src={logoUrl}
-          alt={`${name} logo`}
-          maxH={'75%'}
-          mt={0}
-          mx="auto"
-          objectFit="contain"
-        />
+        {' '}
+        {logoUrl && (
+          <Image
+            src={logoUrl}
+            alt={`${name} logo`}
+            maxH={'75%'}
+            mt={0}
+            mx="auto"
+            objectFit="contain"
+          />
+        )}
         <Text
           my={4}
           fontSize="lg"

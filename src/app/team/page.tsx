@@ -36,11 +36,11 @@ const FaClock = dynamic(
   { ssr: false }
 );
 
-//import MemberCard from './membercard';
+// import MemberCard from './membercard';
 
-//import { MemberCard as Member } from './membercard';
+// import { MemberCard as Member } from './membercard';
 
-//import membersData from './members.json';
+// import membersData from './members.json';
 
 interface StatItemProps {
   icon: React.ElementType;
@@ -143,7 +143,7 @@ export default function AboutPage() {
               ))}
             </Flex>
           </Box> */}
-          <Box maxW={'70%'}>
+          <Box maxW={{ base: '100%', md: '80%', lg: '70%' }}>
             <Text fontSize="xl" color={'gray.fg'}>
               Approximately the top 50 teams in Western Washington move on to
               the District Championships, and the top 50 teams from each

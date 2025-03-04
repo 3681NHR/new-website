@@ -128,14 +128,17 @@ function NavbarItem(
           alignItems={'center'}
         >
           <ChakraLink
-            href={href}
             paddingX={'6'}
             paddingY={'1.5'}
+            rounded={'lg'}
             outline={'none'}
+            asChild
           >
-            <Text textStyle={'xl'} fontWeight={'semibold'} color={'fg'}>
-              {title}
-            </Text>
+            <Link href={href}>
+              <Text textStyle={'xl'} fontWeight={'semibold'} color={'fg'}>
+                {title}
+              </Text>
+            </Link>
           </ChakraLink>
         </Box>
       ) : (
