@@ -31,6 +31,12 @@
       "url": "https://www.boeing.com/"
     },
     {
+      "name": "Seattle NTC",
+      "logoUrl": "/sponsorlogos/SeattleNTC_cmyk.png",
+      "tier": "raider",
+      "url": "https://seattlentc.com/"
+    },
+    {
       "name": "SPEEA",
       "logoUrl": "/sponsorlogos/SPEEA_Logo.png",
       "tier": "major",
@@ -41,6 +47,30 @@
       "logoUrl": "/sponsorlogos/first-horz-rgb.png",
       "tier": "captain",
       "url": "https://www.firstinspires.org/"
+    },
+    {
+      "name": "Online Metals",
+      "logoUrl": "/sponsorlogos/OnlineMetals-Logo.svg",
+      "tier": "captain",
+      "url": "https://www.onlinemetals.com/"
+    },
+    {
+      "name": "Pagliacci",
+      "logoUrl": "/sponsorlogos/pagliacci.svg",
+      "tier": "lieutenant",
+      "url": "https://www.pagliacci.com/"
+    },
+    {
+      "name": "P2S",
+      "logoUrl": "/sponsorlogos/p2s_legence_logo.svg",
+      "tier": "lieutenant",
+      "url": "https://p2sinc.com/"
+    },
+    {
+      "name": "Daniella Wahler",
+      "logoUrl": null,
+      "tier": "lieutenant",
+      "url": "#"
     }
   ]
 }

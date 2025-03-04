@@ -5,12 +5,12 @@ const sponsorsData = (await import('./sponsors.json')) as {
 };
 import SponsorCard from './sponsorCard';
 
-type sponsorTier = 'raider' | 'captain' | 'major';
+type sponsorTier = 'raider' | 'captain' | 'major' | 'lieutenant';
 
 export interface Sponsor {
   name: string;
-  logoUrl: string;
-  tier: sponsorTier; //"raider" | "captain" | "add more"
+  logoUrl?: string;
+  tier: sponsorTier;
   url: string;
 }
 

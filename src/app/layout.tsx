@@ -60,6 +60,9 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props;
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="RoboRaiders 3681" />
+      </head>
       <body>
         <Provider>
           <Navbar />
