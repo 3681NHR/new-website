@@ -25,6 +25,12 @@ import {
   DrawerTrigger,
 } from '@/components/ui/drawer';
 
+const isMobileUserAgent = (userAgent: string): boolean => {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    userAgent
+  );
+};
+
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const [isHamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
@@ -36,6 +42,13 @@ export default function Navbar() {
   }, [pathname]);
 
   useEffect(() => {
+    const userAgent = window.navigator.userAgent;
+    console.log(userAgent);
+    const initialIsMobile =
+      isMobileUserAgent(userAgent) || window.innerWidth <= 700;
+
+    setIsMobile(initialIsMobile);
+
     const handleWindowResize = () => {
       setIsMobile(window.innerWidth <= 700);
     };
@@ -45,6 +58,10 @@ export default function Navbar() {
 
     return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
+
+  if (isMobile === null) {
+    return null; // Or a simple loading indicator if needed
+  }
 
   return (
     <nav>
